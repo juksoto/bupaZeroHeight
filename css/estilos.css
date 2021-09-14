@@ -1,36 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
 
-body{
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-}
-/* typography */
-
-/* 34px */
-h1, .bp-h1{
-	font-size: 2.125rem; 
-}
-/* 30px */
-h2, .bp-h2{
-	font-size: 1.875rem; 
-}
-/* 26px */
-h3, .bp-h3{
-	font-size: 1.625rem; 
-}
-/* 22px */
-h4, .bp-h4{
-	font-size: 1.375rem; 
-}
-/* 18px */
-h5, .bp-h5{
-	font-size: 1.125rem; 
-}
-/* 16px */
-h6, .bp-h6{
-	font-size: 1rem; 
+/* Tags Generals CSS */
+html, body {
+  font-size: 16px;
 }
 
-/* end typography */
+/** CSS Typography **/
+/** 
+* heading typography
+* [description]
+* h1: 34px
+* h2: 30px
+* h3: 26px
+* h4: 22px
+* h5: 18px
+* h6: 16px
+**/
+h1, .bp-h1 {
+  font-size: 2.125rem;
+}
 
+h2, .bp-h2 {
+  font-size: 1.875rem;
+}
+
+h3, .bp-h3 {
+  font-size: 1.625rem;
+}
+
+h4, .bp-h4 {
+  font-size: 1.375rem;
+}
+
+h5, .bp-h5 {
+  font-size: 1.125rem;
+}
+
+h6, .bp-h6 {
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 .bp-h1,
+.bp-h2, .bp-h3, .bp-h4, .bp-h5, .bp-h6 {
+  font-weight: bold;
+  color: #0079C0;
+}
+
+/***  end typography heading size **/
+/** 
+* typography colors
+**/
+.bp-color_black {
+  color: #000;
+}
+
+.bp-color_white {
+  color: #fff;
+}
+
+.bp-color_primary {
+  color: #0079C0;
+}
+
+.bp-color_cyan-dark {
+  color: #00548C;
+}
+
+.bp-color_navy {
+  color: #00335B;
+}
+
+.bp-color_grey-dark {
+  color: #333333;
+}
+
+.bp-color_grey-medium {
+  color: #919295;
+}
+
+.bp-color_grey-light {
+  color: #F1EFEB;
+}
+
+/*** end typography colors **/
+/*** typography colors with !important **/
+.bp-color_black--important {
+  color: #000 !important;
+}
+
+.bp-color_white--important {
+  color: #fff !important;
+}
+
+.bp-color_primary--important {
+  color: #0079C0 !important;
+}
+
+.bp-color_cyan-dark--important {
+  color: #00548C !important;
+}
+
+.bp-color_navy--important {
+  color: #00335B !important;
+}
+
+.bp-color_grey-dark--important {
+  color: #333333 !important;
+}
+
+.bp-color_grey-medium--important {
+  color: #919295 !important;
+}
+
+.bp-color_grey-light--important {
+  color: #F1EFEB !important;
+}
+
+/*** end typography colors with !important **/

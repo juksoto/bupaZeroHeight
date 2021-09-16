@@ -7,6 +7,7 @@ body {
   font-size: 0.875rem;
 }
 
+/** CSS Material Icons ***/
 /** CSS Typography **/
 /** 
 * heading typography
@@ -141,7 +142,7 @@ h1, h2, h3, h4, h5, h6 .bp-h1,
 }
 
 .bp-font-size_24 {
-  font-size: 0.875rem;
+  font-size: 1.5rem;
 }
 
 .bp-font-size_32 {

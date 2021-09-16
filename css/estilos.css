@@ -178,3 +178,15 @@ a:visited {
 }
 
 /** end etiquetas de enlace **/
+/* elementos de texto html 5*/
+mark {
+  background-color: #ECF6FF;
+}
+
+blockquote {
+  padding: 1.5rem;
+  background-color: #ECF6FF;
+  border: 1px solid #BFDDF1;
+}
+
+/** end elementos de texto html 5**/

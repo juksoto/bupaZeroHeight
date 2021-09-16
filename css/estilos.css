@@ -165,3 +165,16 @@ label {
 }
 
 /** end label component **/
+/** etiquetas de enlace **/
+a {
+  color: #0079C0;
+  text-decoration: underline;
+}
+a:hover, a:focus {
+  color: #00335B;
+}
+a:visited {
+  color: #00548C;
+}
+
+/** end etiquetas de enlace **/

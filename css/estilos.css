@@ -171,7 +171,7 @@ a {
   text-decoration: underline;
 }
 a:hover, a:focus {
-  color: #00335B;
+  color: #002949;
 }
 a:visited {
   color: #00548C;
@@ -190,3 +190,217 @@ blockquote {
 }
 
 /** end elementos de texto html 5**/
+/** 
+* buttons component
+**/
+/** definicion de boton **/
+.btn,
+.bp-btn {
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  width: auto;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0079C0;
+  border: 0;
+  background-color: transparent;
+}
+.btn:visited,
+.bp-btn:visited {
+  color: #0079C0;
+}
+.btn:hover:not([disabled]), .btn:focus:not([disabled]),
+.bp-btn:hover:not([disabled]),
+.bp-btn:focus:not([disabled]) {
+  background-color: #002949;
+  color: #fff;
+  text-decoration: none;
+}
+.btn:disabled, .btn.disabled,
+.bp-btn:disabled,
+.bp-btn.disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+
+.btn-icon,
+.bp-btn-icon {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #0079C0;
+  border: 0;
+  background-color: transparent;
+}
+.btn-icon:visited,
+.bp-btn-icon:visited {
+  color: #0079C0;
+}
+.btn-icon:hover:not([disabled]), .btn-icon:focus:not([disabled]), .btn-icon.active:not([disabled]),
+.bp-btn-icon:hover:not([disabled]),
+.bp-btn-icon:focus:not([disabled]),
+.bp-btn-icon.active:not([disabled]) {
+  background-color: #002949;
+  color: #fff;
+  text-decoration: none;
+}
+
+/** end definicion de boton **/
+/**
+* Variaciones - Estilos de boton 
+***/
+/**
+ * 1. btn primary and secondary 
+**/
+.btn-primary,
+.bp-btn-primary {
+  background-color: #0079C0;
+  color: #fff;
+  border: 0;
+}
+.btn-primary:visited,
+.bp-btn-primary:visited {
+  color: #fff;
+}
+
+.btn-secondary,
+.bp-btn-secondary {
+  background-color: #00335B;
+  color: #fff;
+  border: 0;
+}
+.btn-secondary:visited,
+.bp-btn-secondary:visited {
+  color: #fff;
+}
+
+/** important **/
+.btn-primary--important,
+.bp-btn-primary--important {
+  background-color: #0079C0 !important;
+  color: #fff !important;
+}
+
+.btn-secondary--important,
+.bp-btn-secondary--important {
+  background-color: #00335B !important;
+  color: #fff !important;
+}
+
+/** end important **/
+/** end btn primary and secondary **/
+/**
+ * 2.btn outline primary and secondary
+**/
+.btn-outline-primary,
+.bp-btn-outline-primary {
+  background-color: transparent;
+  color: #0079C0;
+  border: 1px solid #0079C0;
+}
+.btn-outline-primary:visited,
+.bp-btn-outline-primary:visited {
+  color: #0079C0;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus,
+.bp-btn-outline-primary:hover,
+.bp-btn-outline-primary:focus {
+  border-color: #002949;
+}
+
+.btn-outline-secondary,
+.bp-btn-outline-secondary {
+  background-color: transparent;
+  color: #00548C;
+  border: 1px solid #00548C;
+}
+.btn-outline-secondary:visited,
+.bp-btn-outline-secondary:visited {
+  color: #00548C;
+}
+.btn-outline-secondary:hover, .btn-outline-secondary:focus,
+.bp-btn-outline-secondary:hover,
+.bp-btn-outline-secondary:focus {
+  border-color: #002949;
+}
+
+/** important **/
+.btn-outline-primary,
+.bp-btn-outline-primary {
+  background-color: transparent !important;
+  color: #0079C0 !important;
+  border: 1px solid #0079C0 !important;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus,
+.bp-btn-outline-primary:hover,
+.bp-btn-outline-primary:focus {
+  background-color: #002949 !important;
+  border-color: #002949 !important;
+  color: #fff !important;
+}
+
+.btn-outline-secondary,
+.bp-btn-outline-secondary {
+  background-color: transparent;
+  color: #00548C !important;
+  border: 1px solid #00548C !important;
+}
+.btn-outline-secondary:visited,
+.bp-btn-outline-secondary:visited {
+  color: #00548C !important;
+}
+.btn-outline-secondary:hover, .btn-outline-secondary:focus,
+.bp-btn-outline-secondary:hover,
+.bp-btn-outline-secondary:focus {
+  background-color: #002949 !important;
+  border-color: #002949 !important;
+  color: #fff !important;
+}
+
+/** end important **/
+/** end btn outline primary and secondary **/
+/**
+* 3. Link
+**/
+.btn-link,
+.bp-btn-link {
+  color: #0079C0;
+  text-decoration: underline;
+}
+.btn-link:visited,
+.bp-btn-link:visited {
+  color: #0079C0;
+}
+.btn-link:hover:not([disabled]), .btn-link:focus:not([disabled]),
+.bp-btn-link:hover:not([disabled]),
+.bp-btn-link:focus:not([disabled]) {
+  background-color: transparent;
+  color: #002949;
+  text-decoration: underline;
+}
+
+/** end btn link **/

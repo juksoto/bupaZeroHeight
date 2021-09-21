@@ -337,7 +337,7 @@ blockquote {
 .bp-btn-outline-primary {
   background-color: transparent;
   color: #0079C0;
-  border: 1px solid #0079C0;
+  border: 2px solid #0079C0;
 }
 .btn-outline-primary:visited,
 .bp-btn-outline-primary:visited {
@@ -353,7 +353,7 @@ blockquote {
 .bp-btn-outline-secondary {
   background-color: transparent;
   color: #00548C;
-  border: 1px solid #00548C;
+  border: 2px solid #00548C;
 }
 .btn-outline-secondary:visited,
 .bp-btn-outline-secondary:visited {
@@ -370,7 +370,7 @@ blockquote {
 .bp-btn-outline-primary--important {
   background-color: transparent !important;
   color: #0079C0 !important;
-  border: 1px solid #0079C0 !important;
+  border: 2px solid #0079C0 !important;
 }
 .btn-outline-primary--important:hover, .btn-outline-primary--important:focus,
 .bp-btn-outline-primary--important:hover,
@@ -384,7 +384,7 @@ blockquote {
 .bp-btn-outline-secondary--important {
   background-color: transparent;
   color: #00548C !important;
-  border: 1px solid #00548C !important;
+  border: 2px solid #00548C !important;
 }
 .btn-outline-secondary--important:visited,
 .bp-btn-outline-secondary--important:visited {

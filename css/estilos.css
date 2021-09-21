@@ -470,42 +470,47 @@ blockquote {
 }
 
 .bp-section_shadow {
-  -webkit-box-shadow: 0px 0px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.bp-section_shadow--strong {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .bp-section_border {
-  border: 1px solid #919295;
+  border: 1px solid #E6E6E6;
 }
 
 /** end section **/
 /*** background color section ***/
 .bp-bg_white {
-  color: #fff;
+  background-color: #fff;
 }
 
 .bp-bg_cyan-25 {
-  color: #BFDDF1;
+  background-color: #BFDDF1;
 }
 
 .bp-bg_cyan-50 {
-  color: #7FBCE3;
+  background-color: #7FBCE3;
 }
 
 .bp-bg_cyan-table {
-  color: #F5FAFF;
+  background-color: #F5FAFF;
 }
 
 .bp-bg_cyan-light {
-  color: #ECF6FF;
+  background-color: #ECF6FF;
 }
 
 .bp-bg_grey-dark {
-  color: #333333;
+  background-color: #333333;
 }
 
 .bp-bg_grey-light {
-  color: #F1EFEB;
+  background-color: #F1EFEB;
 }
 
 .bp-bg-white--opacity {

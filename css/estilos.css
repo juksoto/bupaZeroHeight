@@ -458,13 +458,14 @@ blockquote {
 /** 
 * Forms components 
 **/
-.form-group {
-  margin-bottom: 1rem;
-}
-.form-group label {
+label {
   margin-bottom: 0.5rem;
   font-size: 0.875rem;
   font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 1rem;
 }
 .form-group select {
   padding: 0.125rem 0.125rem 0.0625rem;
@@ -474,21 +475,62 @@ blockquote {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.form-group .form-control {
+
+.form-control {
   display: block;
   color: #919295;
   font-size: 0.875rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  -webkit-border-radius: 0.25rem 0.25rem 0 0;
+  -moz-border-radius: 0.25rem 0.25rem 0 0;
+  -ms-border-radius: 0.25rem 0.25rem 0 0;
+  -o-border-radius: 0.25rem 0.25rem 0 0;
+  border: none;
   border-bottom: 2px solid #919295;
   padding: 1rem 0.5rem;
   height: 2.5rem;
 }
-.form-group .form-control:focus {
+.form-control:focus {
   background-color: #ECF6FF;
   border-color: #0079C0;
   color: #333333;
   outline: 1px solid #BFDDF1;
 }
+.form-control:-moz-read-only {
+  background-color: #dde5ec;
+  color: #919295;
+}
+.form-control:read-only, .form-control[readonly] {
+  background-color: #dde5ec;
+  color: #919295;
+}
 
+.form-control-plaintext {
+  display: block;
+  color: #919295;
+  font-size: 0.875rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  -webkit-border-radius: 0.25rem 0.25rem 0 0;
+  -moz-border-radius: 0.25rem 0.25rem 0 0;
+  -ms-border-radius: 0.25rem 0.25rem 0 0;
+  -o-border-radius: 0.25rem 0.25rem 0 0;
+  border: none;
+  padding: 1rem 0.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+}
+.form-control-plaintext:focus {
+  outline-color: #BFDDF1;
+}
+
+/** form horizontal **/
+.col-form-label {
+  height: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/** end form horizontal **/
 /** 
 * section component
 **/

@@ -467,16 +467,8 @@ label {
 .form-group {
   margin-bottom: 1rem;
 }
-.form-group select {
-  padding: 0.125rem 0.125rem 0.0625rem;
-  background: none;
-  border: none;
-  line-height: 1.6;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
 
-.form-control {
+.form-control, .custom-select {
   display: block;
   color: #919295;
   font-size: 0.875rem;
@@ -491,7 +483,9 @@ label {
   height: 2.5rem;
 }
 
-.form-control:focus, .form-control-focus, input[type=text]:focus,
+.form-control:focus,
+.form-control-focus,
+input[type=text]:focus,
 input[type=tel]:focus,
 input[type=url]:focus,
 input[type=password]:focus,
@@ -502,12 +496,11 @@ input[type=search]:focus {
   outline: 1px solid #BFDDF1;
 }
 
-.form-control:-moz-read-only, input[type=text]:-moz-read-only, input[type=tel]:-moz-read-only, input[type=url]:-moz-read-only, input[type=password]:-moz-read-only, input[type=search]:-moz-read-only {
+input[type=text]:-moz-read-only, input[type=tel]:-moz-read-only, input[type=url]:-moz-read-only, input[type=password]:-moz-read-only, input[type=search]:-moz-read-only {
   background-color: #dde5ec;
   color: #919295;
 }
 
-.form-control:read-only,
 .form-control[readonly],
 .form-control-readonly,
 input[type=text]:read-only,
@@ -541,7 +534,7 @@ input[type=search][disabled] {
   color: #919295;
 }
 
-.form-control-plaintext {
+input[type=text].form-control-plaintext:-moz-read-only, input[type=tel].form-control-plaintext:-moz-read-only, input[type=url].form-control-plaintext:-moz-read-only, input[type=password].form-control-plaintext:-moz-read-only, input[type=search].form-control-plaintext:-moz-read-only {
   display: block;
   color: #919295;
   font-size: 0.875rem;
@@ -555,7 +548,41 @@ input[type=search][disabled] {
   height: 2.5rem;
   background-color: transparent;
 }
-.form-control-plaintext:focus {
+
+.form-control-plaintext, input[type=text].form-control-plaintext:read-only, input[type=text].form-control-plaintext[readonly],
+input[type=tel].form-control-plaintext:read-only,
+input[type=tel].form-control-plaintext[readonly],
+input[type=url].form-control-plaintext:read-only,
+input[type=url].form-control-plaintext[readonly],
+input[type=password].form-control-plaintext:read-only,
+input[type=password].form-control-plaintext[readonly],
+input[type=search].form-control-plaintext:read-only,
+input[type=search].form-control-plaintext[readonly] {
+  display: block;
+  color: #919295;
+  font-size: 0.875rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  -webkit-border-radius: 0.25rem 0.25rem 0 0;
+  -moz-border-radius: 0.25rem 0.25rem 0 0;
+  -ms-border-radius: 0.25rem 0.25rem 0 0;
+  -o-border-radius: 0.25rem 0.25rem 0 0;
+  border: none;
+  padding: 1rem 0.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+}
+input[type=text].form-control-plaintext:focus:-moz-read-only, input[type=tel].form-control-plaintext:focus:-moz-read-only, input[type=url].form-control-plaintext:focus:-moz-read-only, input[type=password].form-control-plaintext:focus:-moz-read-only, input[type=search].form-control-plaintext:focus:-moz-read-only {
+  outline-color: #BFDDF1;
+}
+.form-control-plaintext:focus, input[type=text].form-control-plaintext:focus:read-only, input[type=text].form-control-plaintext[readonly]:focus,
+input[type=tel].form-control-plaintext:focus:read-only,
+input[type=tel].form-control-plaintext[readonly]:focus,
+input[type=url].form-control-plaintext:focus:read-only,
+input[type=url].form-control-plaintext[readonly]:focus,
+input[type=password].form-control-plaintext:focus:read-only,
+input[type=password].form-control-plaintext[readonly]:focus,
+input[type=search].form-control-plaintext:focus:read-only,
+input[type=search].form-control-plaintext[readonly]:focus {
   outline-color: #BFDDF1;
 }
 

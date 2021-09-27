@@ -479,7 +479,7 @@ label {
   -o-border-radius: 0.25rem 0.25rem 0 0;
   border: none;
   border-bottom: 2px solid #919295;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem;
   height: 2.5rem;
 }
 
@@ -489,7 +489,8 @@ input[type=text]:focus,
 input[type=tel]:focus,
 input[type=url]:focus,
 input[type=password]:focus,
-input[type=search]:focus {
+input[type=search]:focus,
+.custom-select:focus {
   background-color: #ECF6FF;
   border-color: #0079C0;
   color: #333333;
@@ -512,7 +513,8 @@ input[type=url][readonly],
 input[type=password]:read-only,
 input[type=password][readonly],
 input[type=search]:read-only,
-input[type=search][readonly] {
+input[type=search][readonly],
+.custom-select[readonly] {
   background-color: #dde5ec;
   color: #919295;
 }
@@ -529,7 +531,9 @@ input[type=url][disabled],
 input[type=password]:disabled,
 input[type=password][disabled],
 input[type=search]:disabled,
-input[type=search][disabled] {
+input[type=search][disabled],
+.custom-select:disabled,
+.custom-select[disabled] {
   background-color: #F1EFEB;
   color: #919295;
 }

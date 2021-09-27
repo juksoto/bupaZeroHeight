@@ -261,62 +261,313 @@
 	<h2>
 		Forms
 	</h2>
-	 <div class="row">
-            <div class="col-lg-3 col-sm-4">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Regular">
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-              <div class="form-group">
-                <label for="exampleInput1" class="bmd-label-floating">With Floating Label</label>
-                <input type="email" class="form-control" id="exampleInput1">
-                <span class="bmd-help">We'll never share your email with anyone else.</span>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-              <div class="form-group has-success">
-                <label for="exampleInput2" class="bmd-label-floating">Success input</label>
-                <input type="text" class="form-control" id="exampleInput2">
-                <span class="form-control-feedback">
-                  <i class="material-icons">done</i>
-                </span>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-              <div class="form-group has-danger">
-                <label for="exampleInput3" class="bmd-label-floating">Error input</label>
-                <input type="email" class="form-control" id="exampleInput3">
-                <span class="form-control-feedback">
-                  <i class="material-icons">clear</i>
-                </span>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">group</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="With Material Icons">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="fa fa-group"></i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="With Font Awesome Icons">
-                </div>
-              </div>
-            </div>
-          </div>
+	<div class="row">
+		<div class="col-lg-3 col-sm-4">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Regular">
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-4">
+			<div class="form-group">
+				<label for="exampleInput1" class="bmd-label-floating">With Floating Label</label>
+				<input type="email" class="form-control" id="exampleInput1">
+				<span class="bmd-help">We'll never share your email with anyone else.</span>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-4">
+			<div class="form-group has-success">
+				<label for="exampleInput2" class="bmd-label-floating">Success input</label>
+				<input type="text" class="form-control" id="exampleInput2">
+				<span class="form-control-feedback">
+					<i class="material-icons">done</i>
+				</span>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-4">
+			<div class="form-group has-danger">
+				<label for="exampleInput3" class="bmd-label-floating">Error input</label>
+				<input type="email" class="form-control" id="exampleInput3">
+				<span class="form-control-feedback">
+					<i class="material-icons">clear</i>
+				</span>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-4">
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="material-icons">group</i>
+						</span>
+					</div>
+					<input type="text" class="form-control" placeholder="With Material Icons">
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-4">
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="fa fa-group"></i>
+						</span>
+					</div>
+					<input type="text" class="form-control" placeholder="With Font Awesome Icons">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="form-group">
+		<label for="polizaID">Número de póliza</label>
+		<input type="text" class="form-control-plaintext" id="polizaID" placeholder="Este campo es de solo lectura"
+			readonly aria-describedby="polizaHelp">
+		<small id="polizaHelp" class="form-text text-muted">Información contextual</small>
+	</div>
+
+	<hr>
+	<div class="form-group row">
+		<label for="polizaID" class="col-12 col-sm-3 col-form-label">Número de póliza</label>
+		<input type="text" class="col-12 col-sm-9 form-control-plaintext" id="polizaID"
+			placeholder="Este campo es de solo lectura" readonly aria-describedby="polizaHelp">
+	</div>
+
+
+	<section class="contenedor">
+
+		<div class="form-group">
+			<label for="polizaID">Número de póliza</label>
+			<input type="text" class="form-control" id="polizaID" aria-describedby="polizaHelp">
+			<small id="polizaHelp" class="form-text text-muted">Información contextual</small>
+		</div>
+
+		<hr>
+		<!-- Formulario horizontal -->
+
+		<div class="form-group row">
+			<label for="polizaID2" class="col-12 col-sm-3 col-form-label">Número de póliza</label>
+			<div class="col-12 col-sm-9 ">
+				<input type="text" class="form-control" id="polizaID2" placeholder="Ingrese su información"
+					aria-describedby="polizaHelp">
+				<small id="polizaHelp" class="form-text text-muted">Información contextual</small>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="polizaID3" class="col-12 col-sm-3 col-form-label">Nombre</label>
+			<input type="text" class="col-12 col-sm-9 form-control" id="polizaID3" placeholder="Ingrese su información"
+				aria-describedby="polizaHelp">
+		</div>
+
+	</section>
+
+
+
+	<section>
+		<form class="">
+			<div class="form-row">
+				<div class="col-md-6 mb-3">
+					<label for="validationCustom01">
+						Nombre
+					</label>
+					<input type="text" class="form-control is-valid" id="validationCustom01" value="Mark" required="">
+					<div class="valid-feedback">
+						¡Este campo esta correcto!
+					</div>
+				</div>
+				<div class="col-md-6 mb-3">
+					<label for="validationCustom02">
+						Apellido
+					</label>
+					<input type="text" class="form-control is-invalid" id="validationCustom02" value="Mark" required="">
+					<div class="invalid-feedback">
+						¡Este campo esta incorrecto!
+					</div>
+				</div>
+
+			</div>
+			<div class="form-row">
+				<div class="col-md-6 mb-3">
+					<label for="validationCustom03">
+						Ciudad
+					</label>
+					<input type="text" class="form-control is-valid" id="validationCustom03" value="Mark" required="">
+					<div class="valid-feedback">
+						¡Este campo esta correcto!
+					</div>
+				</div>
+				<div class="col-md-3 mb-3">
+					<label for="validationCustom04">
+						Estado
+					</label>
+					<select class="custom-select is-invalid" id="validationCustom04" required="">
+						<option selected="" disabled="" value="">
+							Escoger...
+						</option>
+						<option>
+							...
+						</option>
+					</select>
+					<div class="invalid-feedback">
+						Seleccione un estado válido.
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
+					<label class="form-check-label" for="invalidCheck">
+						Acepta los términos y condiciones
+					</label>
+					<div class="invalid-feedback">
+						Debes estar de acuerdo antes de enviar.
+					</div>
+				</div>
+			</div>
+			<button class="btn btn-primary" type="submit">
+				Enviar formulario
+			</button>
+		</form>
+	</section>
+
+
+
+
+	<!--  -->
+
+	<section>
+		<form class="">
+			<!-- form row -->
+			<div class="form-row">
+				<!-- col 1 -->
+				<div class="col-md-6 mb-3">
+					<!-- form group -->
+					<div class="form-group">
+						<label for="validationCustom01">
+							Nombre
+						</label>
+						<input type="text" class="form-control is-valid" id="validationCustom01" value="Mark"
+							required="">
+						<div class="valid-feedback">
+							¡Este campo esta correcto!
+						</div>
+					</div>
+					<!-- end form group -->
+
+				</div>
+				<!-- end col 1 -->
+				<!-- col 2 -->
+				<div class="col-md-6 mb-3">
+					<!-- form group -->
+					<div class="form-group">
+						<label for="validationCustom02">
+							Apellido
+						</label>
+						<input type="text" class="form-control is-invalid" id="validationCustom02" value="Mark"
+							required="">
+						<div class="invalid-feedback">
+							¡Este campo esta incorrecto!
+						</div>
+					</div>
+				</div>
+				<!-- end col 2 -->
+			</div>
+			<!-- end form row -->
+		</form>
+	</section>
+	<section>
+		<form class="">
+			<!-- form row -->
+			<div class="form-row">
+				<!-- col 1 -->
+				<div class="col-md-6 mb-3">
+					<!-- form group -->
+					<div class="form-group">
+						<label for="exampleFormControlTextarea1">Póliza descripción</label>
+						<textarea class="form-control  is-valid" readonly id="exampleFormControlTextarea1" rows="3"
+							aria-describedby="polizaHelp"></textarea>
+						<div class="valid-feedback">
+							¡Este campo esta correcto!
+						</div>
+					</div>
+					<!-- end form group -->
+				</div>
+				<!-- end col 1 -->
+				<!-- col 2 -->
+				<div class="col-md-6 mb-3">
+					<!-- form group -->
+					<div class="form-group">
+						<label for="exampleFormControlSelect1">Example select</label>
+						<textarea class="form-control  is-invalid" readonly id="exampleFormControlTextarea1" rows="3"
+							aria-describedby="polizaHelp"></textarea>
+						<div class="invalid-feedback">
+							¡Este campo esta correcto!
+						</div>
+					</div>
+					<!-- end form group -->
+				</div>
+				<!-- end col 2 -->
+			</div>
+			<!-- end form row -->
+		</form>
+
+		<section>
+			<form class="">
+				<!-- form row -->
+				<div class="form-row">
+					<!-- col 1 -->
+					<div class="col-md-6 mb-3">
+						<!-- form group -->
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input is-valid" type="checkbox" value="" id="defaultCheck1">
+								<label class="form-check-label" for="defaultCheck1">
+									Default checkbox
+								</label>
+								<div class="valid-feedback">
+									¡Este campo esta correcto!
+								</div>
+							</div>
+						</div>
+						<!-- end form group -->
+					</div>
+					<!-- end col 1 -->
+					<!-- col 2 -->
+					<div class="col-md-6 mb-3">
+						<!-- form group -->
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input is-invalid" type="checkbox" value="" id="defaultCheck1">
+								<label class="form-check-label" for="defaultCheck1">
+									Default checkbox
+								</label>
+								<div class="invalid-feedback">
+									¡Este campo esta correcto!
+								</div>
+							</div>
+						</div>
+						<!-- end form group -->
+					</div>
+					<!-- end col 2 -->
+				</div>
+				<!-- end form row -->
+			</form>
+		</section>
+
+		<app-datepicker-wrapper formcontrolname="policyOwnerDob" ng-reflect-has-errors="[object Object]"
+			ng-reflect-name="policyOwnerDob" class="ng-pristine ng-invalid ng-touched">
+			<div class="ig-date-picker">
+				<div class="input-group"><input class="ig-date-picker-hidden" ngbdatepicker=""><input
+						class="form-control" ng-reflect-klass="form-control" ng-reflect-ng-class="[object Object]"
+						placeholder="dd-mm-yyyy">
+					<div class="input-group-btn"><button class="btncalendar" type="button"><i
+								class="material-icons">date_range</i></button></div>
+				</div>
+			</div>
+		</app-datepicker-wrapper>
+
+
+	</section>
 
 </body>
 

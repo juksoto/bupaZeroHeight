@@ -468,7 +468,8 @@ label {
   margin-bottom: 1rem;
 }
 
-.form-control, .custom-select {
+.form-control,
+.custom-select {
   display: block;
   color: #919295;
   font-size: 0.875rem;
@@ -487,6 +488,8 @@ label {
 .form-control-focus,
 input[type=text]:focus,
 input[type=tel]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
 input[type=url]:focus,
 input[type=password]:focus,
 input[type=search]:focus,
@@ -497,7 +500,7 @@ input[type=search]:focus,
   outline: 1px solid #BFDDF1;
 }
 
-input[type=text]:-moz-read-only, input[type=tel]:-moz-read-only, input[type=url]:-moz-read-only, input[type=password]:-moz-read-only, input[type=search]:-moz-read-only {
+input[type=text]:-moz-read-only, input[type=tel]:-moz-read-only, input[type=email]:-moz-read-only, input[type=number]:-moz-read-only, input[type=url]:-moz-read-only, input[type=password]:-moz-read-only, input[type=search]:-moz-read-only {
   background-color: #dde5ec;
   color: #919295;
 }
@@ -508,6 +511,10 @@ input[type=text]:read-only,
 input[type=text][readonly],
 input[type=tel]:read-only,
 input[type=tel][readonly],
+input[type=email]:read-only,
+input[type=email][readonly],
+input[type=number]:read-only,
+input[type=number][readonly],
 input[type=url]:read-only,
 input[type=url][readonly],
 input[type=password]:read-only,
@@ -526,6 +533,10 @@ input[type=text]:disabled,
 input[type=text][disabled],
 input[type=tel]:disabled,
 input[type=tel][disabled],
+input[type=email]:disabled,
+input[type=email][disabled],
+input[type=number]:disabled,
+input[type=number][disabled],
 input[type=url]:disabled,
 input[type=url][disabled],
 input[type=password]:disabled,
@@ -538,28 +549,12 @@ input[type=search][disabled],
   color: #919295;
 }
 
-input[type=text].form-control-plaintext:-moz-read-only, input[type=tel].form-control-plaintext:-moz-read-only, input[type=url].form-control-plaintext:-moz-read-only, input[type=password].form-control-plaintext:-moz-read-only, input[type=search].form-control-plaintext:-moz-read-only {
-  display: block;
-  color: #919295;
-  font-size: 0.875rem;
-  border-radius: 0.25rem 0.25rem 0 0;
-  -webkit-border-radius: 0.25rem 0.25rem 0 0;
-  -moz-border-radius: 0.25rem 0.25rem 0 0;
-  -ms-border-radius: 0.25rem 0.25rem 0 0;
-  -o-border-radius: 0.25rem 0.25rem 0 0;
-  border: none;
-  height: 2.5rem;
-  background-color: transparent;
-}
-
-.form-control-plaintext, input[type=text].form-control-plaintext:read-only, input[type=text].form-control-plaintext[readonly],
-input[type=tel].form-control-plaintext:read-only,
+.form-control-plaintext, input[type=text].form-control-plaintext[readonly],
 input[type=tel].form-control-plaintext[readonly],
-input[type=url].form-control-plaintext:read-only,
+input[type=email].form-control-plaintext[readonly],
+input[type=number].form-control-plaintext[readonly],
 input[type=url].form-control-plaintext[readonly],
-input[type=password].form-control-plaintext:read-only,
 input[type=password].form-control-plaintext[readonly],
-input[type=search].form-control-plaintext:read-only,
 input[type=search].form-control-plaintext[readonly] {
   display: block;
   color: #919295;
@@ -573,18 +568,29 @@ input[type=search].form-control-plaintext[readonly] {
   height: 2.5rem;
   background-color: transparent;
 }
-input[type=text].form-control-plaintext:focus:-moz-read-only, input[type=tel].form-control-plaintext:focus:-moz-read-only, input[type=url].form-control-plaintext:focus:-moz-read-only, input[type=password].form-control-plaintext:focus:-moz-read-only, input[type=search].form-control-plaintext:focus:-moz-read-only {
+.form-control-plaintext:focus, input[type=text].form-control-plaintext[readonly]:focus,
+input[type=tel].form-control-plaintext[readonly]:focus,
+input[type=email].form-control-plaintext[readonly]:focus,
+input[type=number].form-control-plaintext[readonly]:focus,
+input[type=url].form-control-plaintext[readonly]:focus,
+input[type=password].form-control-plaintext[readonly]:focus,
+input[type=search].form-control-plaintext[readonly]:focus {
   outline-color: #BFDDF1;
 }
-.form-control-plaintext:focus, input[type=text].form-control-plaintext:focus:read-only, input[type=text].form-control-plaintext[readonly]:focus,
-input[type=tel].form-control-plaintext:focus:read-only,
-input[type=tel].form-control-plaintext[readonly]:focus,
-input[type=url].form-control-plaintext:focus:read-only,
-input[type=url].form-control-plaintext[readonly]:focus,
-input[type=password].form-control-plaintext:focus:read-only,
-input[type=password].form-control-plaintext[readonly]:focus,
-input[type=search].form-control-plaintext:focus:read-only,
-input[type=search].form-control-plaintext[readonly]:focus {
+
+.custom-select-plaintext {
+  display: block;
+  color: #919295;
+  font-size: 0.875rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  -webkit-border-radius: 0.25rem 0.25rem 0 0;
+  -moz-border-radius: 0.25rem 0.25rem 0 0;
+  -ms-border-radius: 0.25rem 0.25rem 0 0;
+  -o-border-radius: 0.25rem 0.25rem 0 0;
+  border: none;
+  background-color: transparent;
+}
+.custom-select-plaintext:focus {
   outline-color: #BFDDF1;
 }
 
@@ -596,6 +602,74 @@ input[type=search].form-control-plaintext[readonly]:focus {
 }
 
 /** end form horizontal **/
+/** ng select **/
+.ng-select.form-control {
+  padding: 0;
+  height: auto;
+  display: block;
+  color: #919295;
+  font-size: 0.875rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  -webkit-border-radius: 0.25rem 0.25rem 0 0;
+  -moz-border-radius: 0.25rem 0.25rem 0 0;
+  -ms-border-radius: 0.25rem 0.25rem 0 0;
+  -o-border-radius: 0.25rem 0.25rem 0 0;
+  border: none;
+  border-bottom: 2px solid #919295;
+  height: 2.5rem;
+}
+.ng-select.ng-select-focused {
+  background-color: #ECF6FF;
+  border-color: #0079C0;
+  color: #333333;
+  outline: 1px solid #BFDDF1;
+}
+.ng-select .ng-select-container {
+  padding: 0.5rem;
+}
+.ng-select .ng-select-container .ng-value-container {
+  padding-top: 0;
+}
+.ng-select .ng-select-container .ng-value-container .ng-input > input {
+  height: auto;
+  padding: 0;
+  padding-left: 0.5rem;
+}
+.ng-select .ng-select-container .ng-value-container .ng-value {
+  padding: 0;
+}
+
+/** end ng select **/
+/*** datepicker ***/
+.ig-date-picker .input-group .form-control {
+  display: block;
+  color: #919295;
+  font-size: 0.875rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  -webkit-border-radius: 0.25rem 0.25rem 0 0;
+  -moz-border-radius: 0.25rem 0.25rem 0 0;
+  -ms-border-radius: 0.25rem 0.25rem 0 0;
+  -o-border-radius: 0.25rem 0.25rem 0 0;
+  border: none;
+  border-bottom: 2px solid #919295;
+  padding: 0.5rem;
+  height: 2.5rem;
+}
+.ig-date-picker .input-group .form-control:focus {
+  background-color: #ECF6FF;
+  border-color: #0079C0;
+  color: #333333;
+  outline: 1px solid #BFDDF1;
+}
+
+.ngb-dp-weekdays .ngb-dp-weekday {
+  background-color: #00335B;
+  color: #fff;
+}
+.ngb-dp-weekdays .ngb-dp-weekday[_ngcontent-c22] {
+  color: #fff;
+}
+
 /** 
 * section component
 **/

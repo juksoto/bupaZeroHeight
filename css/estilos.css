@@ -548,7 +548,6 @@ input[type=text].form-control-plaintext:-moz-read-only, input[type=tel].form-con
   -ms-border-radius: 0.25rem 0.25rem 0 0;
   -o-border-radius: 0.25rem 0.25rem 0 0;
   border: none;
-  padding: 1rem 0.5rem;
   height: 2.5rem;
   background-color: transparent;
 }
@@ -571,7 +570,6 @@ input[type=search].form-control-plaintext[readonly] {
   -ms-border-radius: 0.25rem 0.25rem 0 0;
   -o-border-radius: 0.25rem 0.25rem 0 0;
   border: none;
-  padding: 1rem 0.5rem;
   height: 2.5rem;
   background-color: transparent;
 }

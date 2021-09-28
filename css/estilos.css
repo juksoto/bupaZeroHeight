@@ -658,6 +658,22 @@ blockquote {
 * end buttons component
 **/
 /** 
+* dropdowns component
+**/
+.dropdown-menu .dropdown-item {
+  text-decoration: none;
+  color: #333333;
+  font-size: 0.875rem;
+}
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
+  background-color: #002949;
+  color: #fff;
+}
+
+/** 
+* end dropdowns component
+**/
+/** 
 * Forms components 
 **/
 label {
@@ -935,3 +951,175 @@ input[type=search].form-control-plaintext[readonly]:focus {
 /** 
 * end section component
 **/
+/** 
+* tables component
+**/
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #F5FAFF;
+}
+
+.table-hover tbody tr:hover {
+  color: #00335B;
+  background-color: #F5FAFF;
+}
+
+.table thead tr th {
+  border-collapse: collapse;
+  background-color: #0079C0;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  vertical-align: middle;
+  border-right: 0px solid #fff;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+/** 
+* end tables component
+**/
+/*** wizzard  ***/
+.wizzard-steps {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  font-size: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /** step active **/
+  /** end step active **/
+  /** step error **/
+  /** end step error **/
+  /** step success **/
+}
+.wizzard-steps .wizzard-step {
+  margin-bottom: 1rem;
+}
+.wizzard-steps .wizzard-step:first-child {
+  margin-left: 0;
+}
+.wizzard-steps .wizzard-step:last-child {
+  margin-right: auto;
+}
+.wizzard-steps .wizzard-step:first-of-type .step-circle::before {
+  display: none;
+}
+.wizzard-steps .wizzard-step:last-of-type .step-content {
+  padding-right: 0;
+}
+.wizzard-steps .wizzard-step-content {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 10rem;
+  min-width: 10rem;
+  max-width: 10rem;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+.wizzard-steps .wizzard-step-content .step-text {
+  color: #919295;
+  /*word-break: break-all;*/
+  margin-top: 0.625rem;
+  font-size: 0.85rem;
+}
+.wizzard-steps .step-circle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  background-color: rgba(0, 51, 91, 0.5);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-weight: bold;
+}
+.wizzard-steps .step-circle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -2px;
+  width: calc(10rem + 1rem - 2.25rem);
+  height: 2px;
+  transform: translate(-100%, -50%);
+  color: #dde5ec;
+  background-color: currentColor;
+  -webkit-transform: translate(-100%, -50%);
+  -moz-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  -o-transform: translate(-100%, -50%);
+}
+.wizzard-steps .step-active .step-circle {
+  color: #fff;
+  background-color: #00335B;
+  border-color: #fff;
+}
+.wizzard-steps .step-active .step-circle::before {
+  color: #00335B;
+}
+.wizzard-steps .step-active .step-text {
+  color: #00335B;
+}
+.wizzard-steps .step-error .step-circle {
+  color: #fff;
+  background-color: #eb4d4b;
+  border-color: #fff;
+}
+.wizzard-steps .step-error .step-circle::before {
+  color: #eb4d4b;
+}
+.wizzard-steps .step-error .step-text {
+  color: #eb4d4b;
+}
+.wizzard-steps .step-success .step-circle {
+  color: #fff;
+  background-color: #00335B;
+  border-color: #fff;
+}
+.wizzard-steps .step-success .step-circle::before {
+  color: #00335B;
+}
+.wizzard-steps .step-success .step-text {
+  color: #333333;
+}
+.wizzard-steps .step-success .step-circle {
+  color: #000;
+  background-color: #f9ca24;
+  border-color: #f9ca24;
+}
+.wizzard-steps .step-success .step-circle::before {
+  color: #f9ca24;
+}
+.wizzard-steps .step-success .step-text {
+  color: #333333;
+}
+
+/** end step success **/
+/*** end wizzard  ***/

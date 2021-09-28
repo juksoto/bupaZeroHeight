@@ -995,6 +995,8 @@ input[type=search].form-control-plaintext[readonly]:focus {
   /** step error **/
   /** end step error **/
   /** step success **/
+  /** end step success **/
+  /** step warning **/
 }
 .wizzard-steps .wizzard-step {
   margin-bottom: 1rem;
@@ -1109,17 +1111,17 @@ input[type=search].form-control-plaintext[readonly]:focus {
 .wizzard-steps .step-success .step-text {
   color: #333333;
 }
-.wizzard-steps .step-success .step-circle {
+.wizzard-steps .step-warning .step-circle {
   color: #000;
   background-color: #f9ca24;
   border-color: #f9ca24;
 }
-.wizzard-steps .step-success .step-circle::before {
+.wizzard-steps .step-warning .step-circle::before {
   color: #f9ca24;
 }
-.wizzard-steps .step-success .step-text {
+.wizzard-steps .step-warning .step-text {
   color: #333333;
 }
 
-/** end step success **/
+/** end step warning **/
 /*** end wizzard  ***/

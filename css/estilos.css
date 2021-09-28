@@ -201,6 +201,16 @@ blockquote {
   border-radius: 0.25rem;
 }
 
+.bp-alert-icon {
+  vertical-align: middle;
+}
+.bp-alert-icon .material-icons {
+  margin-right: 0.2rem;
+  font-size: 1.4rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .bp-alert-primary,
 .alert-primary {
   background-color: #90d6ff;

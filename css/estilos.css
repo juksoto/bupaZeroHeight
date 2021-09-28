@@ -57,6 +57,10 @@ h1, h2, h3, h4, h5, h6 .bp-h1,
   color: #000;
 }
 
+.bp-color_danger {
+  color: #eb4d4b;
+}
+
 .bp-color_white {
   color: #fff;
 }
@@ -89,6 +93,10 @@ h1, h2, h3, h4, h5, h6 .bp-h1,
 /*** typography colors with !important **/
 .bp-color_black--important {
   color: #000 !important;
+}
+
+.bp-color_danger--important {
+  color: #eb4d4b !important;
 }
 
 .bp-color_white--important {
@@ -610,6 +618,11 @@ blockquote {
 }
 
 /** end btn link **/
+/** btn elininar **/
+.btn-danger {
+  color: #eb4d4b;
+}
+
 /**
 * Btn Group Icon + Text
 */
@@ -849,14 +862,6 @@ input[type=search].form-control-plaintext[readonly]:focus {
   border-color: #0079C0;
   color: #333333;
   outline: 1px solid #BFDDF1;
-}
-
-.ngb-dp-weekdays .ngb-dp-weekday {
-  background-color: #00335B;
-  color: #fff;
-}
-.ngb-dp-weekdays .ngb-dp-weekday[_ngcontent-c22] {
-  color: #fff;
 }
 
 /** 

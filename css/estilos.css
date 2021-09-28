@@ -191,6 +191,148 @@ blockquote {
 
 /** end elementos de texto html 5**/
 /** 
+* alerts component
+**/
+.bp-alert, .alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.bp-alert-primary,
+.alert-primary {
+  background-color: #90d6ff;
+  border-color: #20adff;
+  color: #001826;
+}
+.bp-alert-primary a,
+.alert-primary a {
+  color: #001826;
+}
+.bp-alert-primary a:hover, .bp-alert-primary a:focus,
+.alert-primary a:hover,
+.alert-primary a:focus {
+  color: #004973;
+}
+
+.bp-alert-secondary,
+.alert-secondary {
+  background-color: #6cbfff;
+  border-color: #0079d9;
+  color: #000a12;
+}
+.bp-alert-secondary a,
+.alert-secondary a {
+  color: #000a12;
+}
+.bp-alert-secondary a:hover, .bp-alert-secondary a:focus,
+.alert-secondary a:hover,
+.alert-secondary a:focus {
+  color: #001f37;
+}
+
+.bp-alert-success,
+.alert-success {
+  background-color: #cbe4c0;
+  border-color: #96c981;
+  color: #15230f;
+}
+.bp-alert-success a,
+.alert-success a {
+  color: #15230f;
+}
+.bp-alert-success a:hover, .bp-alert-success a:focus,
+.alert-success a:hover,
+.alert-success a:focus {
+  color: #406a2e;
+}
+
+.bp-alert-danger,
+.alert-danger {
+  background-color: #f8c1c0;
+  border-color: #f18281;
+  color: #380706;
+}
+.bp-alert-danger a,
+.alert-danger a {
+  color: #380706;
+}
+.bp-alert-danger a:hover, .bp-alert-danger a:focus,
+.alert-danger a:hover,
+.alert-danger a:focus {
+  color: #a71413;
+}
+
+.bp-alert-warning,
+.alert-warning {
+  background-color: #fdecb2;
+  border-color: #fbda66;
+  color: #372c02;
+}
+.bp-alert-warning a,
+.alert-warning a {
+  color: #372c02;
+}
+.bp-alert-warning a:hover, .bp-alert-warning a:focus,
+.alert-warning a:hover,
+.alert-warning a:focus {
+  color: #a68305;
+}
+
+.bp-alert-info,
+.alert-info {
+  background-color: #a8e8ee;
+  border-color: #50d1de;
+  color: #072124;
+}
+.bp-alert-info a,
+.alert-info a {
+  color: #072124;
+}
+.bp-alert-info a:hover, .bp-alert-info a:focus,
+.alert-info a:hover,
+.alert-info a:focus {
+  color: #14646b;
+}
+
+.bp-alert-light,
+.alert-light {
+  background-color: #faf9f8;
+  border-color: #f5f4f1;
+  color: #383227;
+}
+.bp-alert-light a,
+.alert-light a {
+  color: #383227;
+}
+.bp-alert-light a:hover, .bp-alert-light a:focus,
+.alert-light a:hover,
+.alert-light a:focus {
+  color: #a3957b;
+}
+
+.bp-alert-dark,
+.alert-dark {
+  background-color: #b8b8b8;
+  border-color: #707070;
+  color: #0a0a0a;
+}
+.bp-alert-dark a,
+.alert-dark a {
+  color: #0a0a0a;
+}
+.bp-alert-dark a:hover, .bp-alert-dark a:focus,
+.alert-dark a:hover,
+.alert-dark a:focus {
+  color: #1f1f1f;
+}
+
+/** 
+* end alerts component
+**/
+/** 
 * buttons component
 **/
 /** definicion de boton **/

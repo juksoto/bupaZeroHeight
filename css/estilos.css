@@ -1125,8 +1125,8 @@ input[type=search].form-control-plaintext[readonly]:focus {
 }
 .wizzard-steps .step-success .step-circle {
   color: #fff;
-  background-color: #6ab04c;
-  border-color: #6ab04c;
+  background-color: #00335B;
+  border-color: #fff;
 }
 .wizzard-steps .step-success .step-circle::before {
   color: #6ab04c;
@@ -1137,7 +1137,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
 .wizzard-steps .step-warning .step-circle {
   color: #000;
   background-color: #f9ca24;
-  border-color: #f9ca24;
+  border-color: #fff;
 }
 .wizzard-steps .step-warning .step-circle::before {
   color: #f9ca24;

@@ -980,6 +980,10 @@ input[type=search].form-control-plaintext[readonly]:focus {
 * end tables component
 **/
 /*** wizzard  ***/
+.wizzard-container {
+  text-align: center;
+}
+
 .wizzard-steps {
   padding: 0;
   margin: 0 auto;

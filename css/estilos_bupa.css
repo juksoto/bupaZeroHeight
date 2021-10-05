@@ -17038,43 +17038,8 @@ app-other-insurance label {
 app-custom-date-picker {
     width: 100%;
 }
-.form-group {
-    margin: 0;
-}
-.form-group .form-control {
-    background-color: #fff;
-    padding: 0.3rem 0.5rem;
-    border: none !important;
-    border-radius: 0 !important;
-    border-bottom: 2px solid #d3d3d3 !important;
-    font-weight: 500;
-    color: #292929;
-}
-.form-group {
-    position: relative;
-}
-.form-group .form-control {
-    border-radius: 0 !important;
-    border-bottom: 2px solid #d3d3d3 !important;
-    color: #292929;
-    font-weight: 500;
-}
-.form-group .form-control:focus {
-    outline: 2px solid #007bd1;
-}
-.form-group label {
-    color: #292929;
-    margin: 0;
-    font-weight: bold;
-    font-size: 14px !important;
-    padding: 0 0 0 0;
-    color: #292929;
-}
-.form-group .form-check-label {
-    color: #292929;
-    font-weight: 500;
-    margin: 0.2em 0;
-}
+
+
 .bp-mainpolicy {
     margin: 0;
 }

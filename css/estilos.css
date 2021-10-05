@@ -13,9 +13,9 @@ body {
 /** 
 * heading typography
 * [description]
- * Heading 1: 32px
- * Heading 2: 28px
- * Heading 3: 24px
+ * Heading 1: 28px
+ * Heading 2: 24px
+ * Heading 3: 22px
  * Heading 4: 20px
  * Heading 5: 18px
  * Heading 6: 14px
@@ -729,7 +729,7 @@ label {
   -ms-border-radius: 0.25rem 0.25rem 0 0;
   -o-border-radius: 0.25rem 0.25rem 0 0;
   border: none;
-  border-bottom: 2px solid #919295;
+  border-bottom: 2px solid #DADBDB;
   padding: 0.5rem;
   height: 2.5rem;
 }
@@ -817,7 +817,7 @@ input[type=search].form-control-plaintext[readonly] {
   border: none;
   height: 2.5rem;
   background-color: transparent;
-  border-bottom: 2px solid #919295;
+  /*border-bottom: 2px solid $color_grey-medium;*/
 }
 .form-control-plaintext:focus, input[type=text].form-control-plaintext[readonly]:focus,
 input[type=tel].form-control-plaintext[readonly]:focus,
@@ -841,7 +841,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
   -o-border-radius: 0.25rem 0.25rem 0 0;
   border: none;
   background-color: transparent;
-  border-bottom: 2px solid #919295;
+  /*  border-bottom: 2px solid $color_grey-medium;*/
 }
 .custom-select-plaintext:focus {
   outline-color: #BFDDF1;

@@ -388,6 +388,24 @@ blockquote {
 /** 
 * end accordion component
 **/
+/**
+* Breadcrumb component
+*/
+.breadcrumb {
+  background-color: #ECF6FF;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #0079C0;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.breadcrumb .breadcrumb-item a:hover, .breadcrumb .breadcrumb-item a:focus {
+  color: #002949;
+}
+.breadcrumb .breadcrumb-item.activeEnrollment, .breadcrumb .breadcrumb-item .activeEnrollment, .breadcrumb .breadcrumb-item.active {
+  color: #00335B;
+}
+
 /** 
 * buttons component
 **/
@@ -988,9 +1006,9 @@ input[type=search].form-control-plaintext[readonly]:focus {
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   overflow-x: auto;
   font-size: 1rem;
   -ms-flex-wrap: wrap;

@@ -925,6 +925,38 @@ input[type=search].form-control-plaintext[readonly]:focus {
 }
 
 /** 
+* pagination
+**/
+.bp-pagination-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination .page-item .page-link {
+  text-decoration: none;
+  color: #0079C0;
+}
+.pagination .page-item .page-link:hover, .pagination .page-item .page-link:focus {
+  background-color: #002949;
+  color: #fff;
+  border-color: #002949;
+}
+.pagination .page-item.disabled .page-link {
+  background-color: #F1EFEB;
+  color: #919295;
+  border-color: #F1EFEB;
+}
+.pagination .page-item.active .page-link {
+  background-color: #002949;
+  color: #fff;
+  border-color: #002949;
+}
+
+/** 
 * section component
 **/
 /** section **/

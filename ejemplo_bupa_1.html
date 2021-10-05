@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos_bupa.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<meta>
+</head>
+
+
+<body>
+	<main>
+		<section _ngcontent-c1="" class="container-fluid p-0">
+			<article _ngcontent-c1="" class="row">
+				<article _ngcontent-c1="" class="ig-header order-2">
+					<app-header _ngcontent-c1="">
+						<h1><a ng-reflect-router-link="/" href="/"><svg height="67.639" viewBox="0 0 67.639 67.639"
+									width="67.639" xmlns="http://www.w3.org/2000/svg">
+									<g id="bp-logoBUPA" transform="translate(-277 -368)">
+										<path d="M277,435.639h67.639V368H277v67.639Z" data-name="Path 29" fill="#007bd1"
+											id="Path_29"></path>
+										<path
+											d="M339.841,388.2a8.407,8.407,0,0,1-2.318-.244,7.259,7.259,0,0,1-1.972-1.218c-.329-.252-.667-.514-1.032-.757a2.146,2.146,0,0,0-1.173-.434,2.171,2.171,0,0,0-1.506.842,30.063,30.063,0,0,0-2.465,3.3.178.178,0,0,1-.134.1c-.12,0-.123-.156-.123-.208-.023-2.04-.343-13.177-.566-16.5-.1-1.471-.555-2.384-1.194-2.384-.512,0-1.278.681-1.758,2.6-1.221,4.885-3.826,15.742-4.947,21.257a.117.117,0,0,1-.235,0c-.124-.563-.236-1.2-.34-1.742a11.807,11.807,0,0,0-1.195-3.979c-.653-.917-1.615-.975-2.783-.2a8.271,8.271,0,0,0-.768.612,4.367,4.367,0,0,1-3,1.376H298.578l-.337,1.824h14.47a6.681,6.681,0,0,0,3.67-1.44,1.948,1.948,0,0,1,.935-.472c.317,0,.459.323.576.809.059.237.13.567.21.946a33.087,33.087,0,0,0,1.209,4.565c.244.614.6.953,1.019.953.631,0,1.277-.748,1.641-1.905.487-1.541,3.413-14.22,4.648-19.529.05-.217.079-.34.081-.351a.176.176,0,0,1,.157-.155c.065,0,.137.055.14.175v.02c.094,5.372.36,14.808.761,15.778.221.535.56.819.98.819a2.049,2.049,0,0,0,1.488-1c.21-.305.478-.7.761-1.124.7-1.038,1.49-2.213,1.723-2.465.349-.37.749-.37,1.319.018.082.056.181.128.3.211a9.048,9.048,0,0,0,2.764,1.36,9.935,9.935,0,0,0,2.411.251c.441,0,.91-.018,1.047-.026l.313-1.69c-.164.008-.609.021-1.022.021Zm-36.67-9.86c2.622.147,1.806,5.618-.977,5.464-2.851-.157-1.923-5.625.977-5.464ZM299.057,388l.793-4.312a2.851,2.851,0,0,0,2.589,1.4,4.282,4.282,0,0,0,4.244-4.278c.166-2.452-1.273-3.864-2.946-3.864a3.485,3.485,0,0,0-2.94,1.439l.022-.1a.983.983,0,0,0-1.029-1.174h-.541s-1.472,8.414-1.674,9.428A1.118,1.118,0,0,0,298.609,388Zm-2.815-10.9h-.508s-.75,4.3-.835,4.786a1.874,1.874,0,0,1-2.114,1.772,1.3,1.3,0,0,1-1.416-1.587c.073-.424.61-3.546.657-3.8.149-.844-.57-1.174-1.163-1.174h-.451c-.109.651-.6,3.4-.791,4.476a4.459,4.459,0,0,0-.072,1.156,2.807,2.807,0,0,0,3.035,2.35c2.735,0,3.764-1.43,4.092-3.128.107-.56.626-3.395.666-3.68a1.018,1.018,0,0,0-1.1-1.174ZM285.33,378.58a3.846,3.846,0,0,1-1.154.1h-1.316l.619-3.5H285.2c2.068,0,1.906,2.814.129,3.4Zm-.749,4.987a6.012,6.012,0,0,1-1.316.085h-1.286l.65-3.669h1.906c2.519,0,2.289,3.028.046,3.585Zm4.147-7c0-1.769-1.135-2.591-3.13-2.591-1.227,0-3.157,0-3.861,0l-1.947,10.943,3.535,0a11.892,11.892,0,0,0,2.011-.116,3.566,3.566,0,0,0,2.947-2.92,2.27,2.27,0,0,0-1.755-2.667,2.781,2.781,0,0,0,2.2-2.642Zm23.464,1.641c2.852.158,1.923,5.608-.975,5.448-2.623-.146-1.808-5.6.975-5.448Zm-1.474,6.871a3.129,3.129,0,0,0,2.862-1.457l-.027.117a.99.99,0,0,0,1.029,1.175h.5l1.375-7.82h-1.7l-.228,1.194a2.8,2.8,0,0,0-2.576-1.356c-2.474,0-3.942,2.039-4.188,4.21-.281,2.483,1.323,3.936,2.959,3.936Z"
+											data-name="Path 30" fill="#fff" id="Path_30"
+											transform="translate(0.485 0.467)"></path>
+									</g>
+								</svg></a></h1>
+						<!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+						<nav>
+							<!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+							<div class="ig-quicklinks-scroll">
+								<ul class="nav" id="bp-menuleft" style="top: 0px;">
+									<!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}-->
+									<li class="nav-item" ng-reflect-klass="nav-item"
+										ng-reflect-ng-class="[object Object]"><a class="nav-link" href="#">
+											<div class="ig-icon"><i class="ig-iconmenu ig-icon-developer_board"
+													id="HEARDER_CLAIMSONLINE"></i></div><span>Crear reembolso</span>
+										</a></li>
+									<li class="nav-item" ng-reflect-klass="nav-item"
+										ng-reflect-ng-class="[object Object]"><a class="nav-link" href="#">
+											<div class="ig-icon"><i class="ig-iconmenu ig-icon-playlist_add_check
+" id="HEARDER_MYCLAIMS"></i></div><span>Mis reembolsos</span>
+										</a></li>
+									<li class="nav-item" ng-reflect-klass="nav-item"
+										ng-reflect-ng-class="[object Object]"><a class="nav-link" href="#">
+											<div class="ig-icon"><i class="ig-iconmenu ig-icon-
+account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
+										</a></li>
+									<li class="nav-item" ng-reflect-klass="nav-item"
+										ng-reflect-ng-class="[object Object]"><a class="nav-link" href="#">
+											<div class="ig-icon"><i class="ig-iconmenu ig-icon-devices"
+													id="HEARDER_ONLINEAPPLICATIONMENU"></i></div><span>Crear Solicitud
+												Nueva Póliza</span>
+										</a></li>
+									<li class="nav-item" ng-reflect-klass="nav-item"
+										ng-reflect-ng-class="[object Object]"><a class="nav-link" href="#">
+											<div class="ig-icon"><i class="ig-iconmenu ig-icon-devices"
+													id="HEARDER_ONLINEAPPLICATION"></i></div><span>Ver solicitudes de
+												pólizas</span>
+										</a></li>
+									<li class="nav-item" ng-reflect-klass="nav-item"
+										ng-reflect-ng-class="[object Object]"><a class="nav-link" href="#">
+											<div class="ig-icon"><i class="ig-iconmenu ig-icon-developer_board"
+													id="HEARDER_MYREQUEST"></i></div><span>Consultas</span>
+										</a></li>
+								</ul>
+							</div>
+							<!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><a class="menuico" href="" id="down"><i class="material-icons">keyboard_arrow_down</i></a>
+						</nav>
+					</app-header>
+				</article>
+				<article _ngcontent-c1="" class="ig-contenido order-1">
+					<app-menu _ngcontent-c1="" _nghost-c2="">
+						<section _ngcontent-c2="" class="ig-navtop">
+							<div _ngcontent-c2="" class="ig-menutop">
+								<nav _ngcontent-c2="" class="navbar navbar-expand-lg navbar-dark"><a _ngcontent-c2=""
+										class="navbar-brand" href="/"><svg _ngcontent-c2="" height="28"
+											viewBox="0 0 64 28" width="64" xmlns="http://www.w3.org/2000/svg">
+											<defs _ngcontent-c2="">
+												<style _ngcontent-c2="">
+													.a {
+														fill: #007bd1;
+													}
+
+													.b {
+														fill: #fff;
+													}
+												</style>
+											</defs>
+											<g _ngcontent-c2="" transform="translate(861 4231)">
+												<path _ngcontent-c2="" class="a" d="M277,396h64V368H277v28Z"
+													transform="translate(-1138 -4599)"></path>
+												<path _ngcontent-c2="" class="b"
+													d="M339.258,387.707a8.48,8.48,0,0,1-2.3-.237,7.211,7.211,0,0,1-1.953-1.184c-.325-.245-.66-.5-1.022-.736a1.785,1.785,0,0,0-2.653.4,29.257,29.257,0,0,0-2.441,3.205.177.177,0,0,1-.133.092c-.119,0-.122-.152-.122-.2-.023-1.982-.339-12.8-.56-16.035-.1-1.429-.55-2.317-1.182-2.317-.507,0-1.266.662-1.741,2.525-1.209,4.747-3.789,15.3-4.9,20.656a.116.116,0,0,1-.232,0c-.123-.548-.234-1.169-.337-1.693a11.317,11.317,0,0,0-1.183-3.867c-.646-.891-1.6-.948-2.756-.2a8.165,8.165,0,0,0-.76.594,4.359,4.359,0,0,1-2.973,1.337H298.4l-.334,1.772h14.33a6.687,6.687,0,0,0,3.635-1.4,1.945,1.945,0,0,1,.926-.459c.314,0,.454.314.571.786.058.23.129.551.208.919a31.681,31.681,0,0,0,1.2,4.436c.242.6.6.926,1.009.926.625,0,1.265-.727,1.625-1.851.482-1.5,3.38-13.818,4.6-18.977.05-.211.078-.331.08-.341a.173.173,0,0,1,.156-.151c.064,0,.136.054.138.17v.019c.093,5.221.357,14.39.753,15.332a1.086,1.086,0,0,0,.971.8,2.032,2.032,0,0,0,1.474-.972c.208-.3.473-.683.753-1.093.692-1.008,1.475-2.15,1.706-2.4.345-.359.742-.359,1.307.017.081.055.179.124.293.205a9.03,9.03,0,0,0,2.737,1.322,10.018,10.018,0,0,0,2.388.244c.437,0,.9-.017,1.037-.025l.31-1.642c-.163.008-.6.02-1.012.02Zm-36.314-9.581c2.6.143,1.789,5.459-.967,5.309-2.824-.153-1.9-5.466.967-5.309Zm-4.074,9.381.786-4.191a2.834,2.834,0,0,0,2.564,1.358,4.2,4.2,0,0,0,4.2-4.157c.164-2.383-1.261-3.755-2.918-3.755a3.472,3.472,0,0,0-2.912,1.4l.022-.1a.962.962,0,0,0-1.019-1.141h-.536s-1.458,8.176-1.658,9.161a1.092,1.092,0,0,0,1.024,1.427Zm-2.788-10.588h-.5s-.743,4.175-.826,4.65a1.844,1.844,0,0,1-2.094,1.722,1.272,1.272,0,0,1-1.4-1.542c.072-.412.6-3.446.651-3.69.148-.82-.565-1.141-1.152-1.141h-.446c-.108.633-.6,3.3-.784,4.349a4.25,4.25,0,0,0-.071,1.124,2.769,2.769,0,0,0,3.006,2.283c2.708,0,3.728-1.389,4.052-3.04.106-.544.62-3.3.659-3.576a1,1,0,0,0-1.09-1.141Zm-10.806,1.437a3.88,3.88,0,0,1-1.143.1h-1.3l.613-3.4h1.705c2.048,0,1.888,2.734.128,3.3Zm-.742,4.846a6.062,6.062,0,0,1-1.3.082h-1.274l.644-3.566h1.888c2.494,0,2.267,2.943.045,3.483Zm4.107-6.8c0-1.719-1.124-2.517-3.1-2.517-1.215,0-3.127,0-3.823,0L279.79,384.51l3.5,0a12,12,0,0,0,1.991-.113,3.494,3.494,0,0,0,2.919-2.838,2.208,2.208,0,0,0-1.738-2.591,2.72,2.72,0,0,0,2.178-2.567Zm23.236,1.595c2.825.154,1.9,5.45-.966,5.293-2.6-.141-1.79-5.444.966-5.293Zm-1.46,6.677a3.114,3.114,0,0,0,2.834-1.415l-.027.114a.969.969,0,0,0,1.02,1.142h.49l1.361-7.6h-1.685l-.225,1.16a2.787,2.787,0,0,0-2.551-1.318,4.279,4.279,0,0,0-4.147,4.091c-.278,2.412,1.31,3.824,2.93,3.824Z"
+													transform="translate(-1138.792 -4600.869)"></path>
+											</g>
+										</svg></a><button _ngcontent-c2="" aria-controls="bp-navbarMenuPpal"
+										aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+										data-target="#bp-navbarMenuPpal" data-toggle="collapse" type="button"><span
+											_ngcontent-c2="" class="navbar-toggler-icon"></span></button>
+									<!--bindings={
+  "ng-reflect-ng-if": "[object Object],[object Object"
+}-->
+									<div _ngcontent-c2="" class="collapse navbar-collapse" id="bp-navbarMenuPpal">
+										<ul _ngcontent-c2="" class="navbar-nav mr-auto" id="navbarSupportedContent">
+											<li _ngcontent-c2="" class="nav-item">
+												<!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><a _ngcontent-c2="" class="nav-link" ng-reflect-router-link="/" href="/"><i _ngcontent-c2=""
+														class="material-icons">home</i> Inicio</a></li>
+											<!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}-->
+											<li _ngcontent-c2="" class="nav-item" ng-reflect-klass="nav-item"
+												ng-reflect-ng-class="[object Object]"><a _ngcontent-c2=""
+													class="nav-link" href="#" id="NAV_PORTFOLIO"> Cartera</a></li>
+											<li _ngcontent-c2="" class="nav-item" ng-reflect-klass="nav-item"
+												ng-reflect-ng-class="[object Object]"><a _ngcontent-c2=""
+													class="nav-link" href="#" id="NAV_MANAGEMYBUSINESS"> Administrar mi
+													negocio</a></li>
+											<li _ngcontent-c2="" class="nav-item" ng-reflect-klass="nav-item"
+												ng-reflect-ng-class="[object Object]"><a _ngcontent-c2=""
+													class="nav-link" href="#" id="NAV_QUOTE2"> Cotizador</a></li>
+											<li _ngcontent-c2="" class="nav-item" ng-reflect-klass="nav-item"
+												ng-reflect-ng-class="[object Object]"><a _ngcontent-c2=""
+													class="nav-link" href="#" id="NAV_SUPPORT"> Soporte y Ayuda</a></li>
+											<li _ngcontent-c2="" class="nav-item" ng-reflect-klass="nav-item"
+												ng-reflect-ng-class="[object Object]"><a _ngcontent-c2=""
+													class="nav-link" href="#" id="NAV_CHANGE_OF_PORTFOLIO"> Cambio de
+													cartera</a></li>
+										</ul>
+
+									</div>
+								</nav>
+								<div _ngcontent-c2="" class="ig-content-dropw">
+									<div _ngcontent-c2="" class="collapse multi-collapse" id="multiCollapseExample1">
+										<div _ngcontent-c2="" class="ig-card">
+											<div _ngcontent-c2="" class="row no-gutters">
+												<div _ngcontent-c2="" class="col-md-8 justify-content-center ">
+													<div _ngcontent-c2="" class="form">
+														<div _ngcontent-c2="" class="input-group"><input
+																_ngcontent-c2="" aria-describedby="button-addon2"
+																aria-label="Recipient's username" class="form-control"
+																placeholder="Buscar" type="text">
+															<div _ngcontent-c2="" class="input-group-append"><button
+																	_ngcontent-c2="" class="btn btn-outline-secondary"
+																	id="button-addon2" type="button"> Buscar </button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div _ngcontent-c2="" class="collapse multi-collapse" id="multiCollapseExample2">
+										<div _ngcontent-c2="" class="ig-card">
+											<div _ngcontent-c2="" class="row no-gutters justify-content-center">
+												<div _ngcontent-c2="" class="col-md-8 pr-md-3">
+													<h6 _ngcontent-c2="" class="animated fadeIn"> Seleccionar Idioma:
+													</h6>
+													<div _ngcontent-c2="" class="row animated fadeIn">
+														<!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}-->
+														<div _ngcontent-c2="" class="col-md-3 ig-selecidioma"><a
+																_ngcontent-c2="" class="nav-link" href="#"><span
+																	_ngcontent-c2=""></span> Inglés</a></div>
+														<div _ngcontent-c2="" class="col-md-3 ig-selecidioma"><a
+																_ngcontent-c2="" class="nav-link" href="#"><span
+																	_ngcontent-c2=""></span> Español</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+					</app-menu>
+				</article>
+				<article _ngcontent-c1="" class="ig-contenido order-3">
+					<!-- bredacrumb -->
+					<section>
+						<nav aria-label="breadcrumb" class="bp-breadcrumb_container">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Inicio</a></li>
+								<li class="breadcrumb-item"><a href="#">Póliza de viaje</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Cotizar</li>
+							</ol>
+						</nav>
+					</section>
+					<!-- end breadcrumb -->
+					<div _ngcontent-c1="" class="ig-contenedor">
+						<!-- 
+							*****************************************************************+
+							** contenido html 
+							*****************************************************************+
+						 -->
+						<section class="">
+							<h1 class="bp-h1 mt-0">
+								Cotiza tu seguro de viaje
+							</h1>
+							<p>
+								Realiza la cotización de tu seguro en tres pasos
+							</p>
+
+						</section>
+						<!-- 
+							 wizzzard
+						  -->
+						<section class="wizzard-container mb-4">
+							<ul class="wizzard-steps">
+								<li class="wizzard-step step-success">
+									<div class="wizzard-step-content">
+										<span class="step-circle">1</span>
+										<span class="step-text"> Información de contacto </span>
+									</div>
+								</li>
+								<li class="wizzard-step step-active">
+									<div class="wizzard-step-content">
+										<span class="step-circle">2</span>
+										<span class="step-text"> Método de pago</span>
+									</div>
+								</li>
+								<li class="wizzard-step">
+									<div class="wizzard-step-content">
+										<span class="step-circle">3</span>
+										<span class="step-text"> Información del evento </span>
+									</div>
+								</li>
+							</ul>
+						</section>
+						<!-- end wizzard -->
+						<!-- seccion con borde -->
+						<section class="bp-section">
+							<!-- html code -->
+							<h2 class="bp-h2">
+								Titulo del paso 2
+							</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est consequatur eaque
+								minima voluptatibus distinctio vel reiciendis. Quo neque dolor illum laudantium,
+								repellendus unde perspiciatis quis porro at tempora magni!
+							</p>
+							<!-- html code -->
+						</section>
+						<!-- end seccion con borde -->
+
+						<!-- end wizzard -->
+						<!-- filtros -->
+						<section class="bp-section bp-section_shadow mb-4">
+							<h4 class="bp-h4  mb-4">
+								Filtre la póliza
+							</h4>
+							<p>
+								Identifique la póliza sobre la cual desea realizar el reembolso. Puede buscarla usando
+								los siguientes campos.
+							</p>
+
+							<section class="row">
+								<div class="col-12 col-md-4">
+
+									<!-- form group -->
+									<div class="form-group">
+										<label for="exampleFormControlSelect1">Selecciona tipo de búsqueda</label>
+										<select class="custom-select" id="exampleFormControlSelect1"
+											aria-describedby="polizaHelp">
+											<option selected>Seleccionar</option>
+											<option disabled="" selected="" value="" ng-reflect-value=""> Selecciona
+											</option>
+											<option value="by_member" ng-reflect-value="by_member"> Buscar por nombre
+											</option>
+											<option value="by_policy" ng-reflect-value="by_policy"> Buscar por número de
+												póliza </option>
+											<option value="by_legacy" ng-reflect-value="by_legacy"> Buscar por número de
+												legacy </option>
+										</select>
+
+
+									</div>
+									<!-- end form group -->
+								</div>
+								<div class="col-12 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="titular">Nombre del titular</label>
+										<input type="text" class="form-control" id="titular"
+											aria-describedby="polizaHelp" placeholder="Ingrese el nombre">
+
+									</div>
+									<!-- end form group -->
+								</div>
+								<div class="col-12 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="apellido">Apellido del titular</label>
+										<input type="text" class="form-control" id="apellido"
+											aria-describedby="polizaHelp" placeholder="Ingrese el apellido">
+
+									</div>
+									<!-- end form group -->
+								</div>
+								<div class="col-12  d-md-flex justify-content-md-end">
+									<button class="btn btn-primary mx-3">Buscar </button>
+								</div>
+
+							</section>
+						</section>
+						<!-- end filtros
+						 -->
+						<!-- seccion con borde -->
+						<section class="bp-section bp-section_shadow mb-4">
+							<h4 class="bp-h4 bp-color_secondary mb-4">
+								Titulo de esta sección
+							</h4>
+							<section class="row">
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nombre">Primer nombre</label>
+										<input type="text" class="form-control" id="nombre"
+											aria-describedby="nombreHelp" placeholder="Ingrese su nombre">
+										
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nombre">Segundo nombre</label>
+										<input type="text" class="form-control" id="nombre"
+											aria-describedby="segundoNombreHelp"
+											placeholder="Ingrese su segundo nombre">
+									
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nombre">Primer apellido</label>
+										<input type="text" class="form-control" id="nombre"
+											aria-describedby="primerApellidoHelp"
+											placeholder="Ingrese su Primer apellido">
+									
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nombre">Segundo apellido</label>
+										<input type="text" class="form-control" id="nombre"
+											aria-describedby="segundoApellidoHelp"
+											placeholder="Ingrese su segundo apellido">
+									
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nombre">Fecha de nacimiento</label>
+										<input type="date" class="form-control" id="nombre"
+											aria-describedby="nacimientoHelp" placeholder="Fecha de nacimiento">
+										
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="estadoCivil">Estado civil</label>
+										<select class="custom-select" id="estadoCivil"
+											aria-describedby="estadoCivilHelp">
+											<option selected>Seleccionar</option>
+											<option>Conviviente</option>
+											<option>Divorciado(a)</option>
+											<option>Soltero(a)</option>
+											<option>Viudo(a)</option>
+
+										</select>
+										
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="identificacion">Tipo de identificación</label>
+										<select class="custom-select" id="identificacion"
+											aria-describedby="identificacionHelp">
+											<option selected>Seleccionar</option>
+											<option>Cédula</option>
+											<option>Pasaporte</option>
+										</select>
+										
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nIdentificacion">Número de identificación</label>
+										<input type="text" class="form-control" id="nIdentificacion"
+											aria-describedby="nIdentificacionoHelp"
+											placeholder="Ingrese su número de identificación">
+										
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<div class="col-12 my-3">
+									<h5 class="bp-h5 bp-color_secondary">
+										Titulo de una sección interna
+									</h5>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatem iure
+										officia accusamus delectus vero, omnis error assumenda impedit, nam, amet rem
+										dolor pariatur tempora cupiditate nulla laboriosam in atque.
+									</p>
+								</div>
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="pais">País de nacimiento</label>
+										<select class="custom-select" id="pais" aria-describedby="paisHelp">
+											<option selected>Seleccionar</option>
+											<option>1</option>
+											<option>2</option>
+										</select>
+										<small id="paisHelp" class="form-text text-muted">Información contextual</small>
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="Nacionalidad">Nacionalidad</label>
+										<select class="custom-select" id="Nacionalidad"
+											aria-describedby="NacionalidadHelp">
+											<option selected>Seleccionar</option>
+											<option>1</option>
+											<option>2</option>
+										</select>
+										<small id="NacionalidadHelp" class="form-text text-muted">Información
+											contextual</small>
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="Nacionalidad">Pais de Residencia</label>
+										<select class="custom-select" id="PaisdeResidencia"
+											aria-describedby="PaisdeResidenciaHelp">
+											<option selected>Seleccionar</option>
+											<option>1</option>
+											<option>2</option>
+										</select>
+										<small id="PaisdeResidenciaHelp" class="form-text text-muted">Información
+											contextual</small>
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<div class="row">
+											<div class="col-12">
+												<label for="estatura">Estatura</label>
+											</div>
+											<div class="col-12 col-md-8">
+												<input type="date" class="form-control" id="estatura"
+													aria-describedby="estaturaHelp" placeholder="Eje 170">
+											</div>
+											<div class="col-12 col-md-4">
+												<div class="form-check">
+													<input class="form-check-input" type="radio" id="inlineradio1"
+														value="option1">
+													<label class="form-check-label" for="inlineradio1">cms</label>
+												</div>
+											</div>
+											<div class="col-12">
+												<small id="estaturaHelp" class="form-text text-muted">Información
+													contextual</small>
+											</div>
+										</div>
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<div class="row">
+											<div class="col-12">
+												<label for="peso">Peso</label>
+											</div>
+											<div class="col-12 col-md-8">
+												<input type="date" class="form-control" id="peso"
+													aria-describedby="pesoHelp" placeholder="Eje 80.5">
+											</div>
+											<div class="col-12 col-md-4">
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" id="inlineradio2"
+														value="option1" name="radioPeso">
+													<label class="form-check-label" for="inlineradio2">kg</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" id="inlineradio3"
+														value="option1" name="radioPeso">
+													<label class="form-check-label" for="inlineradio3">lbs</label>
+												</div>
+											</div>
+											<div class="col-12">
+												<small id="pesoHelp" class="form-text text-muted">Información
+													contextual</small>
+											</div>
+										</div>
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12  d-md-flex justify-content-md-end">
+									<button class="btn btn-outline-secondary mx-1">Agregar campos</button>
+									<button class="btn btn-secondary mx-1">Validar </button>
+								</div>
+							</section>
+
+						</section>
+						<!-- end seccion con borde -->
+						<section class="bp-section">
+							<h3>
+								Titulo descriptivo
+							</h3>
+							<p>A continuación, adjunta las notas médicas y resultados de los estudios
+								diagnósticos realizados.
+						</section>
+
+						<section class="bp-section bp-section_border mb-4">
+							<p>
+								Para los siguientes tipos de servicios necesitaremos
+								que nos incluyas además la siguiente información:</p>
+							</p>
+							<ul class=""">
+									<li>
+										<p>Hospitalización: historias clínicas con notas de evolución, conteniendo los
+											reportes de progreso documentados en el expediente por su médico tratante.
+										</p>
+									</li>
+									<li>
+										<p>Medicamentos: prescripción médica firmada por el médico tratante indicando el
+											fármaco recetado.</p>
+									</li>
+									<li>
+										<p>Terapia: orden y plan de tratamiento. </p>
+									</li>
+									<li>
+										<p>Quimioterapia y radioterapia: protocolos propuestos.</p>
+									</li>
+									<li>
+										<p>Procedimiento quirúrgico: informe operatorio.</p>
+									</li>
+									<li>
+										<p>Estudios de imágenes y diagnósticos: nota médica que indique la necesidad de
+											la realización de las pruebas.</p>
+									</li>
+									<li>
+										<p>Emergencia: informe médico que indique la urgencia del tratamiento.</p>
+									</li>
+									<li>
+										<p>Servicio dental: detalle del procedimiento realizado y en caso de urgencia,
+											informe médico.</p>
+									</li>
+								</ul>
+								<p class=" mt-3">En caso de requerir más información, nos pondremos en contacto contigo.
+								</p>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									<label class="form-check-label" for="defaultCheck1">
+										Acepto <a href="#" target="_blank">términos y condiciones</a>
+									</label>
+								</div>
+						</section>
+						<!-- alertas -->
+
+						<section>
+							<div class="bp-alert bp-alert-success" role="alert">
+								Una simple alerta de éxito: ¡compruébelo!
+							</div>
+							<div class="bp-alert bp-alert-danger" role="alert">
+								Una simple alerta de peligro: ¡compruébelo!
+							</div>
+							<div class="bp-alert bp-alert-warning" role="alert">
+								Una simple alerta de advertencia: ¡compruébelo!
+							</div>
+							<div class="bp-alert bp-alert-info" role="alert">
+								Una simple alerta de información: ¡compruébalo!
+							</div>
+						</section>
+						<!-- end alertas -->
+						<!-- solo lectura -->
+						<section class="bp-section bp-section_shadow mb-4">
+							<h4 class="bp-h4 mb-4">
+								Campos solo lectura
+							</h4>
+							<section class="row">
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nombre">Primer nombre</label>
+										<input type="text" class="form-control-plaintext" readonly id="nombre"
+											aria-describedby="nombreHelp" placeholder="Ingrese su nombre">
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nombre">Segundo nombre</label>
+										<input type="text" class="form-control-plaintext" readonly id="nombre"
+											aria-describedby="segundoNombreHelp"
+											placeholder="Ingrese su segundo nombre">
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nombre">Primer apellido</label>
+										<input type="text" class="form-control-plaintext" readonly id="nombre"
+											aria-describedby="primerApellidoHelp"
+											placeholder="Ingrese su Primer apellido">
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nombre">Segundo apellido</label>
+										<input type="text" class="form-control-plaintext" readonly id="nombre"
+											aria-describedby="segundoApellidoHelp"
+											placeholder="Ingrese su segundo apellido">
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="estadoCivil">Estado civil</label>
+										<select class="form-control-plaintext" disabled="true" id="estadoCivil"
+											aria-describedby="estadoCivilHelp">
+											<option selected>Seleccionar</option>
+											<option>Conviviente</option>
+											<option>Divorciado(a)</option>
+											<option>Soltero(a)</option>
+											<option>Viudo(a)</option>
+
+										</select>
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+
+							</section>
+
+						</section>
+						<!-- 
+							end solo lectura
+						 -->
+						<!-- solo lectura -->
+						<section class="bp-section bp-section_shadow mb-4">
+							<h4 class="bp-h4 mb-4">
+								Campos deshabilitados
+							</h4>
+							<section class="row">
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nombre">Primer nombre</label>
+										<input type="text" class="form-control" id="polizaID"
+											aria-describedby="polizaHelp" disabled placeholder="Ingrese su información">
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nombre">Segundo nombre</label>
+										<input type="text" class="form-control" disabled id="nombre"
+											aria-describedby="segundoNombreHelp"
+											placeholder="Ingrese su segundo nombre">
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nombre">Primer apellido</label>
+										<input type="text" class="form-control" disabled id="nombre"
+											aria-describedby="primerApellidoHelp"
+											placeholder="Ingrese su Primer apellido">
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="nombre">Segundo apellido</label>
+										<input type="text" class="form-control" disabled id="nombre"
+											aria-describedby="segundoApellidoHelp"
+											placeholder="Ingrese su segundo apellido">
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+
+								<!-- col -->
+								<div class="col-12 col-sm-6 col-md-4">
+									<!-- form group -->
+									<div class="form-group">
+										<label for="estadoCivil">Estado civil</label>
+										<select class="custom-select" disabled="true" id="estadoCivil"
+											aria-describedby="estadoCivilHelp">
+											<option selected>Seleccionar</option>
+											<option>Conviviente</option>
+											<option>Divorciado(a)</option>
+											<option>Soltero(a)</option>
+											<option>Viudo(a)</option>
+
+										</select>
+									</div>
+									<!-- end form group -->
+								</div>
+								<!-- end col -->
+
+							</section>
+
+						</section>
+						<!-- 
+							end solo lectura
+						 -->
+						<!-- botones acciones  -->
+						<section class="bp-section text-center">
+							<button class="btn btn-outline-primary mx-1">Atrás</button>
+							<button class="btn btn-primary mx-1">Continuar</button>
+						</section>
+						<!-- end botones acciones -->
+
+						<!-- *****************************************************************
+							 *** end
+							contenido html ***/ *****************************************************************+ 
+						-->
+
+						<footer _ngcontent-c1="">
+							<app-footer _ngcontent-c1="">
+								<hr>
+								<div class="row align-items-center">
+									<div class="col-lg-4 offset-lg-8">
+										<ul class="ig-redes"></ul>
+									</div>
+								</div>
+								<div class="row align-items-center">
+									<div class="col-lg-4 p-0">
+										<div class="ig-copybupa">
+											<p><i class="material-icons">copyright</i> 2021 Bupa todos los derechos
+												reservados</p>
+										</div>
+									</div>
+									<div class="col-lg-5">
+										<ul class="ig-terminos">
+											<li><span>Aviso de Privacidad</span></li>
+											<li><span>Términos de Uso</span></li>
+										</ul>
+									</div>
+									<div class="col-md-3" style="text-align:right"><img alt="" class="img-fluid"
+											src="https://bupadigitalstoragedev.blob.core.windows.net/login/Bupa-USAMED-digital.jpg">
+									</div>
+								</div>
+							</app-footer>
+						</footer>
+					</div>
+				</article>
+			</article>
+		</section>
+
+	</main>
+</body>
+
+</html>

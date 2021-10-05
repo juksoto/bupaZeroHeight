@@ -21,15 +21,15 @@ body {
  * Heading 6: 14px
 **/
 h1, .bp-h1 {
-  font-size: 2rem;
-}
-
-h2, .bp-h2 {
   font-size: 1.75rem;
 }
 
-h3, .bp-h3 {
+h2, .bp-h2 {
   font-size: 1.5rem;
+}
+
+h3, .bp-h3 {
+  font-size: 1.375rem;
 }
 
 h4, .bp-h4 {
@@ -78,6 +78,10 @@ h1, h2, h3, h4, h5, h6 .bp-h1,
   color: #00335B;
 }
 
+.bp-color_secondary {
+  color: #00335B;
+}
+
 .bp-color_grey-dark {
   color: #333333;
 }
@@ -113,6 +117,10 @@ h1, h2, h3, h4, h5, h6 .bp-h1,
 }
 
 .bp-color_navy--important {
+  color: #00335B !important;
+}
+
+.bp-color_secondary--important {
   color: #00335B !important;
 }
 
@@ -164,6 +172,10 @@ h1, h2, h3, h4, h5, h6 .bp-h1,
 
 .bp-font-size_48 {
   font-size: 3rem;
+}
+
+.bp-h1 {
+  margin-top: 0;
 }
 
 /*** end size typography ***/
@@ -392,7 +404,8 @@ blockquote {
 * Breadcrumb component
 */
 .breadcrumb {
-  background-color: #ECF6FF;
+  background-color: transparent;
+  margin-bottom: 0;
 }
 .breadcrumb .breadcrumb-item a {
   color: #0079C0;
@@ -804,6 +817,7 @@ input[type=search].form-control-plaintext[readonly] {
   border: none;
   height: 2.5rem;
   background-color: transparent;
+  border-bottom: 2px solid #919295;
 }
 .form-control-plaintext:focus, input[type=text].form-control-plaintext[readonly]:focus,
 input[type=tel].form-control-plaintext[readonly]:focus,
@@ -813,6 +827,7 @@ input[type=url].form-control-plaintext[readonly]:focus,
 input[type=password].form-control-plaintext[readonly]:focus,
 input[type=search].form-control-plaintext[readonly]:focus {
   outline-color: #BFDDF1;
+  border-color: #0079C0;
 }
 
 .custom-select-plaintext {
@@ -826,9 +841,11 @@ input[type=search].form-control-plaintext[readonly]:focus {
   -o-border-radius: 0.25rem 0.25rem 0 0;
   border: none;
   background-color: transparent;
+  border-bottom: 2px solid #919295;
 }
 .custom-select-plaintext:focus {
   outline-color: #BFDDF1;
+  border-color: #0079C0;
 }
 
 /** form horizontal **/
@@ -901,6 +918,10 @@ input[type=search].form-control-plaintext[readonly]:focus {
 
 .form-check {
   margin-bottom: 0.5rem;
+}
+
+.form-group .form-check-label {
+  font-weight: 500;
 }
 
 /** 
@@ -1133,7 +1154,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
   border-color: #fff;
 }
 .wizzard-steps .step-success .step-circle::before {
-  color: #6ab04c;
+  color: #002949;
 }
 .wizzard-steps .step-success .step-text {
   color: #333333;

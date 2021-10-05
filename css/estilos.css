@@ -696,7 +696,7 @@ blockquote {
 * Forms components 
 **/
 label {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   font-size: 0.875rem;
   font-weight: bold;
 }
@@ -897,6 +897,10 @@ input[type=search].form-control-plaintext[readonly]:focus {
   border-color: #0079C0;
   color: #333333;
   outline: 1px solid #BFDDF1;
+}
+
+.form-check {
+  margin-bottom: 0.5rem;
 }
 
 /** 

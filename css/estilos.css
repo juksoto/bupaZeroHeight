@@ -1103,7 +1103,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
 }
 .wizzard-steps .step-active .step-circle {
   color: #fff;
-  background-color: #00335B;
+  background-color: #00548C;
   border-color: #fff;
 }
 .wizzard-steps .step-active .step-circle::before {
@@ -1125,7 +1125,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
 }
 .wizzard-steps .step-success .step-circle {
   color: #fff;
-  background-color: #00335B;
+  background-color: #002949;
   border-color: #fff;
 }
 .wizzard-steps .step-success .step-circle::before {

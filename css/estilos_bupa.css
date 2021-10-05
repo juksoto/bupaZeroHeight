@@ -26821,25 +26821,7 @@ div#collapsecobemax .card-body {
     margin-bottom: 1rem ;
 }
 
-/** tooltip **/
-.tooltip-help
-{
-    color: #0079C8 !important;
-    font-size:0.9rem;
-}
-.tooltip-help:hover
-{
-    color: #00335b !important;
 
-}
-.tooltip > .tooltip-inner,
-.tooltip-help + .tooltip > .tooltip-inner{
-  background-color: #00335b;
-
-}
-
-
-/*** end tooltip ***/
 
 .bp-payicon .bp-paylogo {
     display: block;

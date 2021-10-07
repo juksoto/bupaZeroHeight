@@ -259,7 +259,8 @@ account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
 								Titulo del paso 2
 							</h2>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est consequatur eaque
+								Lorem ipsum dolor <span class="">sit amet consectetur adipisicing elit.</span> Tenetur
+								est consequatur eaque
 								minima voluptatibus distinctio vel reiciendis. Quo neque dolor illum laudantium,
 								repellendus unde perspiciatis quis porro at tempora magni!
 							</p>
@@ -271,11 +272,17 @@ account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
 						<!-- filtros -->
 						<section class="bp-section bp-section_shadow mb-4">
 							<h4 class="bp-h4  mb-4">
-								Filtre la póliza
+								Filtre la póliza (Campos con tooltip)
 							</h4>
 							<p>
 								Identifique la póliza sobre la cual desea realizar el reembolso. Puede buscarla usando
 								los siguientes campos.
+								<a class="btn-link" data-toggle="tooltip" data-placement="top"
+									title="Al dar clic en los campos de titular y seleccionar tipo de búsqueda, va a mostrar un tooltip contextual">
+									<span class="material-icons">
+										help_outline
+									</span>
+								</a>
 							</p>
 
 							<section class="row">
@@ -508,10 +515,10 @@ account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
 									<!-- form group -->
 									<div class="form-group">
 										<div class="row">
-											<div class="col-12">
+											<div class="col-12 px-0">
 												<label for="estatura">Estatura</label>
 											</div>
-											<div class="col-12 col-md-8">
+											<div class="col-12 col-md-8 pl-0">
 												<input type="date" class="form-control" id="estatura"
 													aria-describedby="estaturaHelp" placeholder="Eje 170">
 											</div>
@@ -579,6 +586,51 @@ account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
 							</h3>
 							<p>A continuación, adjunta las notas médicas y resultados de los estudios
 								diagnósticos realizados.
+								<ul class="list-inline">
+									<li class="list-inline-item">
+										<button class="btn btn-primary">Botón primario </button>
+									</li>
+									<li class="list-inline-item">
+										<button class="btn btn-secondary">Botón secundario </button>
+									</li>
+									<li class="list-inline-item">
+										<button class="btn btn-outline-primary">Botón primario outline </button>
+									</li>
+									<li class="list-inline-item">
+										<button class="btn btn-outline-secondary">Botón secundario outline </button>
+									</li>
+									<li class="list-inline-item">
+										<button class="btn">Botón terciario </button>
+									</li>
+									<li class="list-inline-item">
+										<button class="btn-icon"><span class="material-icons">home </span></button>
+									</li>
+									<li class="list-inline-item">
+										<button class="btn btn-primary btn-group-icon">
+											<span class="material-icons d-inline-flex">home</span>
+											Botón primario
+											<span class="material-icons">chevron_right</span>
+										</button>
+									</li>
+									<li class="list-inline-item">
+										<button class="btn btn-danger btn-group-icon">
+											<span class="material-icons d-inline-flex">delete</span> 
+											Eliminar
+										</button>
+									</li>
+								</ul>
+								<section class="py-4">
+									<h4>
+										Botones inhabilitados
+									</h4>
+									<button class="btn btn-primary " disabled>Botón primario </button>
+									<button class="btn btn-secondary " disabled>Botón secundario </button>
+									<button class="btn btn-outline-primary " disabled>Botón primario outline </button>
+									<button class="btn btn-outline-secondary " disabled>Botón secundario
+										outline</button>
+									<button class="btn " disabled>Botón texto </button>
+									<button class="btn btn-link " disabled>Botón link</button>
+								</section>
 						</section>
 
 						<section class="bp-section bp-section_border mb-4">
@@ -629,18 +681,44 @@ account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
 						<!-- alertas -->
 
 						<section>
-							<div class="bp-alert bp-alert-success" role="alert">
-								Una simple alerta de éxito: ¡compruébelo!
+							<!-- Alerta Success-->
+							<div class="bp-alert bp-alert-success bp-alert-icon" role="alert">
+								<span class="material-icons">
+									check_circle
+								</span>
+								Un ejemplo de alerta de éxito con <a href="#" class="alert-link"> un enlace de
+									ejemplo</a>. ¡Da clic si te
+								gusta!.
 							</div>
-							<div class="bp-alert bp-alert-danger" role="alert">
-								Una simple alerta de peligro: ¡compruébelo!
+							<!-- end alerta  Success-->
+							<!-- Alerta Error-->
+							<div class="bp-alert bp-alert-danger bp-alert-icon" role="alert">
+								<span class="material-icons">
+									highlight_off
+								</span>
+								Un ejemplo de alerta error con <a href="#" class="alert-link"> un enlace de ejemplo</a>.
+								¡Da clic si te gusta!.
 							</div>
-							<div class="bp-alert bp-alert-warning" role="alert">
-								Una simple alerta de advertencia: ¡compruébelo!
+							<!-- end  Alerta Error -->
+							<!-- Alerta warning -->
+							<div class="bp-alert bp-alert-warning bp-alert-icon" role="alert">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Un ejemplo de alerta advertencia con <a href="#" class="alert-link"> un enlace de
+									ejemplo</a>. ¡Da clic si te
+								gusta!.
 							</div>
-							<div class="bp-alert bp-alert-info" role="alert">
-								Una simple alerta de información: ¡compruébalo!
+							<!-- end Alerta warning -->
+							<!-- Alerta info -->
+							<div class="bp-alert bp-alert-info bp-alert-icon" role="alert">
+								<span class="material-icons">
+									error_outline
+								</span> Un ejemplo de alerta informativa con <a href="#" class="alert-link"> un enlace
+									de ejemplo</a>. ¡Da clic
+								si te gusta!.
 							</div>
+							<!-- end  Alerta info  -->
 						</section>
 						<!-- end alertas -->
 						<!-- solo lectura -->
@@ -653,7 +731,7 @@ account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
 								<div class="col-12 col-sm-6 col-md-4">
 									<!-- form group -->
 									<div class="form-group">
-										<label for="nombre">Primer nombre</label>
+										<label for="nombre" class="label-plaintext">Primer nombre</label>
 										<input type="text" class="form-control-plaintext" readonly id="nombre"
 											aria-describedby="nombreHelp" placeholder="Ingrese su nombre">
 									</div>
@@ -664,7 +742,7 @@ account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
 								<div class="col-12 col-sm-6 col-md-4">
 									<!-- form group -->
 									<div class="form-group">
-										<label for="nombre">Segundo nombre</label>
+										<label for="nombre" class="label-plaintext">Segundo nombre</label>
 										<input type="text" class="form-control-plaintext" readonly id="nombre"
 											aria-describedby="segundoNombreHelp"
 											placeholder="Ingrese su segundo nombre">
@@ -676,7 +754,7 @@ account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
 								<div class="col-12 col-sm-6 col-md-4">
 									<!-- form group -->
 									<div class="form-group">
-										<label for="nombre">Primer apellido</label>
+										<label for="nombre" class="label-plaintext">Primer apellido</label>
 										<input type="text" class="form-control-plaintext" readonly id="nombre"
 											aria-describedby="primerApellidoHelp"
 											placeholder="Ingrese su Primer apellido">
@@ -687,7 +765,7 @@ account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
 								<!-- col -->
 								<div class="col-12 col-sm-6 col-md-4">
 									<!-- form group -->
-									<div class="form-group">
+									<div class="form-group" class="label-plaintext">
 										<label for="nombre">Segundo apellido</label>
 										<input type="text" class="form-control-plaintext" readonly id="nombre"
 											aria-describedby="segundoApellidoHelp"
@@ -701,7 +779,7 @@ account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
 								<div class="col-12 col-sm-6 col-md-4">
 									<!-- form group -->
 									<div class="form-group">
-										<label for="estadoCivil">Estado civil</label>
+										<label for="estadoCivil" class="label-plaintext">Estado civil</label>
 										<select class="form-control-plaintext" disabled="true" id="estadoCivil"
 											aria-describedby="estadoCivilHelp">
 											<option selected>Seleccionar</option>
@@ -834,10 +912,11 @@ account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
 										<div class="modal-body">
 											<p>
 												El texto del cuerpo modal va aquí. Puede incluir su texto html aqui y la
-											cantidad de botones que requiera.
+												cantidad de botones que requiera.
 											</p>
 											<p>
-												Si no hay boton, por favor, incluir uno con la etiqueta Cerrar y centrado. 
+												Si no hay boton, por favor, incluir uno con la etiqueta Cerrar y
+												centrado.
 											</p>
 										</div>
 										<div class="modal-footer">
@@ -1009,61 +1088,63 @@ account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
 						</section>
 						<section class="bp-pagination-container">
 							<ul class="pagination">
-							   <li class="page-item disabled"><a aria-label="First" class="page-link" href="" tabindex="-1"><span
-								  aria-hidden="true">««</span></a></li>
-							   <li class="page-item disabled"><a aria-label="Previous" class="page-link" href="" tabindex="-1"><span
-								  aria-hidden="true">«</span></a></li>
-							   <li class="page-item active">
-								  <a class="page-link" href=""> 1
-								  <span class="sr-only">(current)</span></a>
-							   </li>
-							   <li class="page-item">
-								  <a class="page-link" href=""> 2
-								  </a>
-							   </li>
-							   <li class="page-item">
-								  <a class="page-link" href=""> 3
-								  </a>
-							   </li>
-							   <li class="page-item">
-								  <a class="page-link" href=""> 4
-								  </a>
-							   </li>
-							   <li class="page-item">
-								  <a class="page-link" href=""> 5
-								  </a>
-							   </li>
-							   <li class="page-item">
-								  <a class="page-link" href=""> 6
-								  </a>
-							   </li>
-							   <li class="page-item">
-								  <a class="page-link" href=""> 7
-								  </a>
-							   </li>
-							   <li class="page-item">
-								  <a class="page-link" href=""> 8
-								  </a>
-							   </li>
-							   <li class="page-item">
-								  <a class="page-link" href=""> 9
-								  </a>
-							   </li>
-							   <li class="page-item">
-								  <a class="page-link" href=""> 10
-								  </a>
-							   </li>
-							   <li class="page-item disabled">
-								  <a class="page-link">...</a>
-							   </li>
-							   <li class="page-item">
-								  <a class="page-link" href=""> 17
-								  </a>
-							   </li>
-							   <li class="page-item"><a aria-label="Next" class="page-link" href=""><span aria-hidden="true">»</span></a></li>
-							   <li class="page-item"><a aria-label="Last" class="page-link" href=""><span aria-hidden="true">»»</span></a></li>
+								<li class="page-item disabled"><a aria-label="First" class="page-link" href=""
+										tabindex="-1"><span aria-hidden="true">««</span></a></li>
+								<li class="page-item disabled"><a aria-label="Previous" class="page-link" href=""
+										tabindex="-1"><span aria-hidden="true">«</span></a></li>
+								<li class="page-item active">
+									<a class="page-link" href=""> 1
+										<span class="sr-only">(current)</span></a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href=""> 2
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href=""> 3
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href=""> 4
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href=""> 5
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href=""> 6
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href=""> 7
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href=""> 8
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href=""> 9
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href=""> 10
+									</a>
+								</li>
+								<li class="page-item disabled">
+									<a class="page-link">...</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href=""> 17
+									</a>
+								</li>
+								<li class="page-item"><a aria-label="Next" class="page-link" href=""><span
+											aria-hidden="true">»</span></a></li>
+								<li class="page-item"><a aria-label="Last" class="page-link" href=""><span
+											aria-hidden="true">»»</span></a></li>
 							</ul>
-							</section>
+						</section>
 						<!-- botones acciones  -->
 						<section class="bp-section text-center">
 							<button class="btn btn-outline-primary mx-1">Atrás</button>
@@ -1126,6 +1207,9 @@ account_balance" id="HEARDER_PAYMENTS"></i></div><span>Pagos</span>
 				'trigger': 'focus',
 				'title': 'Mensaje de tooltip. Mensaje explicativo del campo'
 			});
+
+			$('[data-toggle="tooltip"]').tooltip()
+
 		});
 	</script>
 </body>

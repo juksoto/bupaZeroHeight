@@ -314,18 +314,18 @@ blockquote {
 
 .bp-alert-info,
 .alert-info {
-  background-color: #a8e8ee;
-  border-color: #50d1de;
-  color: #072124;
+  background-color: #bee1fa;
+  border-color: #7dc4f6;
+  color: #04243a;
 }
 .bp-alert-info a,
 .alert-info a {
-  color: #072124;
+  color: #04243a;
 }
 .bp-alert-info a:hover, .bp-alert-info a:focus,
 .alert-info a:hover,
 .alert-info a:focus {
-  color: #14646b;
+  color: #0c6bae;
 }
 
 .bp-alert-light,
@@ -709,9 +709,12 @@ blockquote {
 * Forms components 
 **/
 label {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   font-size: 0.875rem;
   font-weight: bold;
+}
+label.label-plaintext {
+  margin-bottom: 0;
 }
 
 .form-group {
@@ -869,7 +872,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
   -ms-border-radius: 0.25rem 0.25rem 0 0;
   -o-border-radius: 0.25rem 0.25rem 0 0;
   border: none;
-  border-bottom: 2px solid #919295;
+  border-bottom: 2px solid #DADBDB;
   height: 2.5rem;
 }
 .ng-select.ng-select-focused {
@@ -905,7 +908,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
   -ms-border-radius: 0.25rem 0.25rem 0 0;
   -o-border-radius: 0.25rem 0.25rem 0 0;
   border: none;
-  border-bottom: 2px solid #919295;
+  border-bottom: 2px solid #DADBDB;
   padding: 0.5rem;
   height: 2.5rem;
 }

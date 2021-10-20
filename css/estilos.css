@@ -1047,6 +1047,13 @@ input[type=search].form-control-plaintext[readonly]:focus {
   border-color: #002949;
 }
 
+/*** popover ***/
+.bp-popover, .popover {
+  background-color: #F1EFEB;
+  border-color: #DADBDB;
+  color: #333333;
+}
+
 /** 
 * section component
 **/
@@ -1149,6 +1156,33 @@ input[type=search].form-control-plaintext[readonly]:focus {
 /** 
 * end tables component
 **/
+/*** tooltip ***/
+.tooltip .tooltip-arrow {
+  background-color: #F1EFEB;
+  border-color: #DADBDB;
+}
+.tooltip[x-placement^=top] .arrow::before,
+.tooltip .bs-tooltip-top .arrow::before {
+  border-top-color: #F1EFEB;
+}
+.tooltip[x-placement^=bottom] .arrow::before,
+.tooltip .bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #F1EFEB;
+}
+.tooltip[x-placement^=left] .arrow::before,
+.tooltip .bs-tooltip-left .arrow::before {
+  border-left-color: #F1EFEB;
+}
+.tooltip[x-placement^=right] .arrow::before,
+.tooltip .bs-tooltip-right .arrow::before {
+  border-right-color: #F1EFEB;
+}
+.tooltip .tooltip-inner {
+  background-color: #F1EFEB;
+  border-color: #DADBDB;
+  color: #333333;
+}
+
 /*** wizzard  ***/
 .wizzard-container {
   text-align: center;

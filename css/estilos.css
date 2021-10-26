@@ -1045,6 +1045,10 @@ input[type=search].form-control-plaintext[readonly]:focus {
   font-weight: 500;
 }
 
+.form-check-input.is-valid ~ .form-check-label, .was-validated .form-check-input:valid ~ .form-check-label {
+  color: #333333;
+}
+
 /*** end checkbox and radio button **/
 /** 
 * pagination

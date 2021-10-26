@@ -475,6 +475,18 @@ blockquote {
   border: 0;
   background-color: transparent;
 }
+.btn.btn-2x,
+.bp-btn.btn-2x {
+  padding: 0.75rem 3rem;
+}
+.btn.btn-3x,
+.bp-btn.btn-3x {
+  padding: 0.75rem 4.5rem;
+}
+.btn.btn-4x,
+.bp-btn.btn-4x {
+  padding: 0.75rem 6rem;
+}
 .btn:visited,
 .bp-btn:visited {
   color: #0079C0;
@@ -484,6 +496,7 @@ blockquote {
 .bp-btn:focus:not([disabled]),
 .bp-btn.active:not([disabled]) {
   background-color: #002949;
+  border-color: #002949;
   color: #fff;
   text-decoration: none;
 }
@@ -530,6 +543,7 @@ blockquote {
 .bp-btn-icon:focus:not([disabled]),
 .bp-btn-icon.active:not([disabled]) {
   background-color: #002949;
+  border-color: #002949;
   color: #fff;
   text-decoration: none;
 }
@@ -545,7 +559,7 @@ blockquote {
 .bp-btn-primary {
   background-color: #0079C0;
   color: #fff;
-  border: 0;
+  border: 2px solid #0079C0;
 }
 .btn-primary:visited,
 .bp-btn-primary:visited {
@@ -557,6 +571,7 @@ blockquote {
   background-color: #00335B;
   color: #fff;
   border: 0;
+  border: 2px solid #00335B;
 }
 .btn-secondary:visited,
 .bp-btn-secondary:visited {
@@ -568,6 +583,7 @@ blockquote {
 .bp-btn-primary--important {
   background-color: #0079C0 !important;
   color: #fff !important;
+  border: 2px solid #0079C0 !important;
 }
 .btn-primary--important:hover:not([disabled]), .btn-primary--important:focus:not([disabled]), .btn-primary--important.active:not([disabled]),
 .bp-btn-primary--important:hover:not([disabled]),
@@ -582,6 +598,7 @@ blockquote {
 .bp-btn-secondary--important {
   background-color: #00335B !important;
   color: #fff !important;
+  border: 2px solid #00335B !important;
 }
 .btn-secondary--important:hover:not([disabled]), .btn-secondary--important:focus:not([disabled]), .btn-secondary--important.active:not([disabled]),
 .bp-btn-secondary--important:hover:not([disabled]),
@@ -704,6 +721,9 @@ blockquote {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0.5rem;
+}
+.btn-group-icon .material-icons {
+  font-size: 1.25rem;
 }
 
 /** end Group Icon + Text **/
@@ -1168,30 +1188,36 @@ input[type=search].form-control-plaintext[readonly]:focus {
 * end tables component
 **/
 /*** tooltip ***/
-.tooltip .tooltip-arrow {
+.tooltip .tooltip-arrow,
+.bs-tooltip-auto .tooltip-arrow {
   background-color: #F1EFEB;
   border-color: #DADBDB;
 }
-.tooltip[x-placement^=top] .arrow::before,
-.tooltip .bs-tooltip-top .arrow::before {
-  border-top-color: #F1EFEB;
-}
-.tooltip[x-placement^=bottom] .arrow::before,
-.tooltip .bs-tooltip-bottom .arrow::before {
-  border-bottom-color: #F1EFEB;
-}
-.tooltip[x-placement^=left] .arrow::before,
-.tooltip .bs-tooltip-left .arrow::before {
-  border-left-color: #F1EFEB;
-}
-.tooltip[x-placement^=right] .arrow::before,
-.tooltip .bs-tooltip-right .arrow::before {
-  border-right-color: #F1EFEB;
-}
-.tooltip .tooltip-inner {
+.tooltip .tooltip-inner,
+.bs-tooltip-auto .tooltip-inner {
   background-color: #F1EFEB;
   border-color: #DADBDB;
   color: #333333;
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.bs-tooltip-top .arrow::before {
+  border-top-color: #F1EFEB;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #F1EFEB;
+}
+
+.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.bs-tooltip-left .arrow::before {
+  border-left-color: #F1EFEB;
+}
+
+.bs-tooltip-auto[x-placement^=right] .arrow::before,
+.bs-tooltip-right .arrow::before {
+  border-right-color: #F1EFEB;
 }
 
 /*** wizzard  ***/

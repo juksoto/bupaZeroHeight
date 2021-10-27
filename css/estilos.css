@@ -1050,6 +1050,61 @@ input[type=search].form-control-plaintext[readonly]:focus {
 }
 
 /*** end checkbox and radio button **/
+/** lists componentes **/
+.bp-list-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.bp-list-group .bp-list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #E6E6E6;
+}
+.bp-list-group .bp-list-group-item.bp-list-group--header {
+  background-color: #0079C0;
+  color: #fff;
+}
+.bp-list-group .bp-list-group-item.bp-list-group--header h2,
+.bp-list-group .bp-list-group-item.bp-list-group--header h3,
+.bp-list-group .bp-list-group-item.bp-list-group--header h4,
+.bp-list-group .bp-list-group-item.bp-list-group--header h5,
+.bp-list-group .bp-list-group-item.bp-list-group--header h6 {
+  color: #fff;
+}
+.bp-list-group .bp-list-group-item:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.bp-list-group .bp-list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.bp-list-striped--even li:nth-child(even) {
+  background-color: #F5FAFF;
+}
+
+.bp-list-striped--odd li:nth-child(odd) {
+  background-color: #F5FAFF;
+}
+
+.bp-list-hover li:hover {
+  background-color: #BFDDF1;
+}
+
+/** end lists componentes **/
 /** 
 * pagination
 **/

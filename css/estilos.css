@@ -1177,6 +1177,14 @@ input[type=search].form-control-plaintext[readonly]:focus {
   border: 1px solid #E6E6E6;
 }
 
+.bp-section_radius {
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
 /** end section **/
 /*** background color section ***/
 .bp-bg_primary {
@@ -1279,6 +1287,90 @@ input[type=search].form-control-plaintext[readonly]:focus {
   border-right-color: #F1EFEB;
 }
 
+/*** toggle switch ***/
+.bp-form-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bp-form-switch .form-switch-label {
+  margin-bottom: 0;
+}
+.bp-form-switch .bp-switch-input {
+  position: relative;
+  display: inline-block;
+  width: 3.75rem;
+  height: 2.125rem;
+  margin: 0;
+}
+.bp-form-switch .bp-switch-input input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.bp-form-switch .bp-switch-input .bp-switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 1px solid #E6E6E6;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 3.75rem;
+  -webkit-border-radius: 3.75rem;
+  -moz-border-radius: 3.75rem;
+  -ms-border-radius: 3.75rem;
+  -o-border-radius: 3.75rem;
+  margin: 0;
+}
+.bp-form-switch .bp-switch-input .bp-switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 1.625rem;
+  width: 1.625rem;
+  left: 4px;
+  bottom: 4px;
+  background-color: #DADBDB;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.bp-form-switch .bp-switch-input input:checked + .bp-switch-slider {
+  background-color: #0079C0;
+  outline-color: #0079C0;
+}
+.bp-form-switch .bp-switch-input input:focus + .bp-switch-slider {
+  -webkit-box-shadow: 0 0 1px #002949;
+          box-shadow: 0 0 1px #002949;
+  outline-color: #0079C0;
+}
+.bp-form-switch .bp-switch-input input:checked + .bp-switch-slider:before {
+  -webkit-transform: translateX(1.625rem);
+  transform: translateX(1.625rem);
+  background-color: #fff;
+  transition: 0.25s ease-in-out all;
+  -webkit-transition: 0.25s ease-in-out all;
+  -moz-transition: 0.25s ease-in-out all;
+  -ms-transition: 0.25s ease-in-out all;
+  -o-transition: 0.25s ease-in-out all;
+}
+.bp-form-switch .bp-switch-input input:disabled + .bp-switch-slider {
+  -webkit-box-shadow: 0 0 1px #F1EFEB;
+          box-shadow: 0 0 1px #F1EFEB;
+  background-color: #F1EFEB;
+  outline-color: #F1EFEB;
+}
+.bp-form-switch .bp-switch-input input:disabled + .bp-switch-slider:before {
+  background-color: #DADBDB;
+}
+
+/* end toggle switch*/
 /*** wizzard  ***/
 .wizzard-container {
   text-align: center;

@@ -1297,7 +1297,10 @@ input[type=search].form-control-plaintext[readonly]:focus {
           align-items: center;
 }
 .bp-form-switch .form-switch-label {
+  margin-left: 0.3rem;
   margin-bottom: 0;
+  margin-right: 0.3rem;
+  color: #00335B;
 }
 .bp-form-switch .bp-switch-input {
   position: relative;

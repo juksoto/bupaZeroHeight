@@ -1,3 +1,10 @@
+/*** utilidades de css **/
+@media screen and (min-width: 1200px) {
+  .maxwidth-1200 {
+    max-width: 1200px;
+  }
+}
+/** end utilidades de css **/
 /* Tags Generals CSS */
 html {
   font-size: 16px;
@@ -6,6 +13,7 @@ html {
 body {
   font-size: 0.875rem;
   font-family: "Montserrat", sans-serif;
+  color: #212121;
 }
 
 /** CSS Material Icons ***/
@@ -83,7 +91,7 @@ h1, h2, h3, h4, h5, h6 .bp-h1,
 }
 
 .bp-color_grey-dark {
-  color: #333333;
+  color: #212121;
 }
 
 .bp-color_grey-medium {
@@ -125,7 +133,7 @@ h1, h2, h3, h4, h5, h6 .bp-h1,
 }
 
 .bp-color_grey-dark--important {
-  color: #333333 !important;
+  color: #212121 !important;
 }
 
 .bp-color_grey-medium--important {
@@ -347,18 +355,18 @@ blockquote {
 
 .bp-alert-dark,
 .alert-dark {
-  background-color: #b8b8b8;
-  border-color: #707070;
-  color: #0a0a0a;
+  background-color: #b1b1b1;
+  border-color: #646464;
+  color: #070707;
 }
 .bp-alert-dark a,
 .alert-dark a {
-  color: #0a0a0a;
+  color: #070707;
 }
 .bp-alert-dark a:hover, .bp-alert-dark a:focus,
 .alert-dark a:hover,
 .alert-dark a:focus {
-  color: #1f1f1f;
+  color: #141414;
 }
 
 .card-message {
@@ -749,7 +757,7 @@ blockquote {
 **/
 .dropdown-menu .dropdown-item {
   text-decoration: none;
-  color: #333333;
+  color: #212121;
   font-size: 0.875rem;
 }
 .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
@@ -779,7 +787,7 @@ label.label-plaintext {
 .form-control,
 .custom-select {
   display: block;
-  color: #333333;
+  color: #212121;
   font-size: 0.875rem;
   border-radius: 0.25rem 0.25rem 0 0;
   -webkit-border-radius: 0.25rem 0.25rem 0 0;
@@ -804,13 +812,13 @@ input[type=search]:focus,
 .custom-select:focus {
   background-color: #ECF6FF;
   border-color: #0079C0;
-  color: #333333;
+  color: #212121;
   outline: 1px solid #BFDDF1;
 }
 
 input[type=text]:-moz-read-only, input[type=tel]:-moz-read-only, input[type=email]:-moz-read-only, input[type=number]:-moz-read-only, input[type=url]:-moz-read-only, input[type=password]:-moz-read-only, input[type=search]:-moz-read-only {
   background-color: #F4F9FF;
-  color: #333333;
+  color: #212121;
 }
 
 .form-control[readonly],
@@ -831,12 +839,12 @@ input[type=search]:read-only,
 input[type=search][readonly],
 .custom-select[readonly] {
   background-color: #F4F9FF;
-  color: #333333;
+  color: #212121;
 }
 input[type=text]:focus:-moz-read-only, input[type=tel]:focus:-moz-read-only, input[type=email]:focus:-moz-read-only, input[type=number]:focus:-moz-read-only, input[type=url]:focus:-moz-read-only, input[type=password]:focus:-moz-read-only, input[type=search]:focus:-moz-read-only {
   background-color: #F4F9FF;
   border-color: #DADBDB;
-  color: #333333;
+  color: #212121;
   outline: 1px solid #BFDDF1;
 }
 .form-control[readonly]:focus,
@@ -858,7 +866,7 @@ input[type=search][readonly]:focus,
 .custom-select[readonly]:focus {
   background-color: #F4F9FF;
   border-color: #DADBDB;
-  color: #333333;
+  color: #212121;
   outline: 1px solid #BFDDF1;
 }
 
@@ -886,19 +894,19 @@ input[type=search][disabled],
 }
 
 input[type=text]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=number]::-webkit-input-placeholder, input[type=url]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, input[type=search]::-webkit-input-placeholder, .form-control::-webkit-input-placeholder, .custom-select::-webkit-input-placeholder {
-  color: #919295;
+  color: #DADBDB;
 }
 
 input[type=text]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=number]::-moz-placeholder, input[type=url]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=search]::-moz-placeholder, .form-control::-moz-placeholder, .custom-select::-moz-placeholder {
-  color: #919295;
+  color: #DADBDB;
 }
 
 input[type=text]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=number]:-ms-input-placeholder, input[type=url]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder, input[type=search]:-ms-input-placeholder, .form-control:-ms-input-placeholder, .custom-select:-ms-input-placeholder {
-  color: #919295;
+  color: #DADBDB;
 }
 
 input[type=text]::-ms-input-placeholder, input[type=tel]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, input[type=number]::-ms-input-placeholder, input[type=url]::-ms-input-placeholder, input[type=password]::-ms-input-placeholder, input[type=search]::-ms-input-placeholder, .form-control::-ms-input-placeholder, .custom-select::-ms-input-placeholder {
-  color: #919295;
+  color: #DADBDB;
 }
 
 .form-control-placeholder, input[type=text]::placeholder,
@@ -910,7 +918,7 @@ input[type=password]::placeholder,
 input[type=search]::placeholder,
 .form-control::placeholder,
 .custom-select::placeholder {
-  color: #919295;
+  color: #DADBDB;
 }
 
 .form-control-plaintext, input[type=text].form-control-plaintext[readonly],
@@ -921,7 +929,7 @@ input[type=url].form-control-plaintext[readonly],
 input[type=password].form-control-plaintext[readonly],
 input[type=search].form-control-plaintext[readonly] {
   display: block;
-  color: #919295;
+  color: #212121;
   font-size: 0.875rem;
   border-radius: 0.25rem 0.25rem 0 0;
   -webkit-border-radius: 0.25rem 0.25rem 0 0;
@@ -931,6 +939,7 @@ input[type=search].form-control-plaintext[readonly] {
   border: none;
   height: 2.5rem;
   background-color: transparent;
+  font-weight: 500;
   /*border-bottom: 2px solid $color_grey-medium;*/
 }
 .form-control-plaintext:focus, input[type=text].form-control-plaintext[readonly]:focus,
@@ -942,6 +951,32 @@ input[type=password].form-control-plaintext[readonly]:focus,
 input[type=search].form-control-plaintext[readonly]:focus {
   outline-color: #BFDDF1;
   border-color: #0079C0;
+}
+.form-control-plaintext::-webkit-input-placeholder, input[type=text].form-control-plaintext[readonly]::-webkit-input-placeholder, input[type=tel].form-control-plaintext[readonly]::-webkit-input-placeholder, input[type=email].form-control-plaintext[readonly]::-webkit-input-placeholder, input[type=number].form-control-plaintext[readonly]::-webkit-input-placeholder, input[type=url].form-control-plaintext[readonly]::-webkit-input-placeholder, input[type=password].form-control-plaintext[readonly]::-webkit-input-placeholder, input[type=search].form-control-plaintext[readonly]::-webkit-input-placeholder, .form-control-plaintext::-webkit-input-placeholder {
+  color: #212121;
+  font-weight: 500;
+}
+.form-control-plaintext::-moz-placeholder, input[type=text].form-control-plaintext[readonly]::-moz-placeholder, input[type=tel].form-control-plaintext[readonly]::-moz-placeholder, input[type=email].form-control-plaintext[readonly]::-moz-placeholder, input[type=number].form-control-plaintext[readonly]::-moz-placeholder, input[type=url].form-control-plaintext[readonly]::-moz-placeholder, input[type=password].form-control-plaintext[readonly]::-moz-placeholder, input[type=search].form-control-plaintext[readonly]::-moz-placeholder, .form-control-plaintext::-moz-placeholder {
+  color: #212121;
+  font-weight: 500;
+}
+.form-control-plaintext:-ms-input-placeholder, input[type=text].form-control-plaintext[readonly]:-ms-input-placeholder, input[type=tel].form-control-plaintext[readonly]:-ms-input-placeholder, input[type=email].form-control-plaintext[readonly]:-ms-input-placeholder, input[type=number].form-control-plaintext[readonly]:-ms-input-placeholder, input[type=url].form-control-plaintext[readonly]:-ms-input-placeholder, input[type=password].form-control-plaintext[readonly]:-ms-input-placeholder, input[type=search].form-control-plaintext[readonly]:-ms-input-placeholder, .form-control-plaintext:-ms-input-placeholder {
+  color: #212121;
+  font-weight: 500;
+}
+.form-control-plaintext::-ms-input-placeholder, input[type=text].form-control-plaintext[readonly]::-ms-input-placeholder, input[type=tel].form-control-plaintext[readonly]::-ms-input-placeholder, input[type=email].form-control-plaintext[readonly]::-ms-input-placeholder, input[type=number].form-control-plaintext[readonly]::-ms-input-placeholder, input[type=url].form-control-plaintext[readonly]::-ms-input-placeholder, input[type=password].form-control-plaintext[readonly]::-ms-input-placeholder, input[type=search].form-control-plaintext[readonly]::-ms-input-placeholder, .form-control-plaintext::-ms-input-placeholder {
+  color: #212121;
+  font-weight: 500;
+}
+.form-control-plaintext::placeholder, input[type=text].form-control-plaintext[readonly]::placeholder,
+input[type=tel].form-control-plaintext[readonly]::placeholder,
+input[type=email].form-control-plaintext[readonly]::placeholder,
+input[type=number].form-control-plaintext[readonly]::placeholder,
+input[type=url].form-control-plaintext[readonly]::placeholder,
+input[type=password].form-control-plaintext[readonly]::placeholder,
+input[type=search].form-control-plaintext[readonly]::placeholder, .form-control-plaintext::placeholder {
+  color: #212121;
+  font-weight: 500;
 }
 
 .custom-select-plaintext {
@@ -955,11 +990,32 @@ input[type=search].form-control-plaintext[readonly]:focus {
   -o-border-radius: 0.25rem 0.25rem 0 0;
   border: none;
   background-color: transparent;
+  font-weight: 500;
   /*  border-bottom: 2px solid $color_grey-medium;*/
 }
 .custom-select-plaintext:focus {
   outline-color: #BFDDF1;
   border-color: #0079C0;
+}
+.custom-select-plaintext::-webkit-input-placeholder, .custom-select-plaintext::-webkit-input-placeholder {
+  color: #212121;
+  font-weight: 500;
+}
+.custom-select-plaintext::-moz-placeholder, .custom-select-plaintext::-moz-placeholder {
+  color: #212121;
+  font-weight: 500;
+}
+.custom-select-plaintext:-ms-input-placeholder, .custom-select-plaintext:-ms-input-placeholder {
+  color: #212121;
+  font-weight: 500;
+}
+.custom-select-plaintext::-ms-input-placeholder, .custom-select-plaintext::-ms-input-placeholder {
+  color: #212121;
+  font-weight: 500;
+}
+.custom-select-plaintext::placeholder, .custom-select-plaintext::placeholder {
+  color: #212121;
+  font-weight: 500;
 }
 
 /** form horizontal **/
@@ -989,7 +1045,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
 .ng-select.ng-select-focused {
   background-color: #ECF6FF;
   border-color: #0079C0;
-  color: #333333;
+  color: #212121;
   outline: 1px solid #BFDDF1;
 }
 .ng-select .ng-select-container {
@@ -1026,7 +1082,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
 .ig-date-picker .input-group .form-control:focus {
   background-color: #ECF6FF;
   border-color: #0079C0;
-  color: #333333;
+  color: #212121;
   outline: 1px solid #BFDDF1;
 }
 
@@ -1045,11 +1101,24 @@ input[type=search].form-control-plaintext[readonly]:focus {
   font-weight: 500;
 }
 
-.form-check-input.is-valid ~ .form-check-label, .was-validated .form-check-input:valid ~ .form-check-label {
-  color: #333333;
+.form-check-input.is-valid ~ .form-check-label,
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: #212121;
 }
 
 /*** end checkbox and radio button **/
+/*** form group con tooltip **/
+.form-group .input-group-text-info {
+  font-size: 1em;
+}
+.form-group .input-group-text-info i {
+  font-size: 1.1em;
+  top: 0;
+  display: block;
+  color: #0079C0;
+  padding-left: 0.3em;
+}
+
 /** lists componentes **/
 .bp-list-group {
   display: -webkit-box;
@@ -1141,7 +1210,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
 .bp-popover, .popover {
   background-color: #F1EFEB;
   border-color: #DADBDB;
-  color: #333333;
+  color: #212121;
 }
 
 /** 
@@ -1212,7 +1281,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
 }
 
 .bp-bg_grey-dark {
-  background-color: #333333;
+  background-color: #212121;
 }
 
 .bp-bg_grey-light {
@@ -1264,7 +1333,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
 .bs-tooltip-auto .tooltip-inner {
   background-color: #F1EFEB;
   border-color: #DADBDB;
-  color: #333333;
+  color: #212121;
 }
 
 .bs-tooltip-auto[x-placement^=top] .arrow::before,
@@ -1507,7 +1576,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
   color: #002949;
 }
 .wizzard-steps .step-success .step-text {
-  color: #333333;
+  color: #212121;
 }
 .wizzard-steps .step-warning .step-circle {
   color: #000;
@@ -1518,7 +1587,7 @@ input[type=search].form-control-plaintext[readonly]:focus {
   color: #f9ca24;
 }
 .wizzard-steps .step-warning .step-text {
-  color: #333333;
+  color: #212121;
 }
 
 /** end step warning **/

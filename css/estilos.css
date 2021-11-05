@@ -1110,10 +1110,10 @@ input[type=search].form-control-plaintext[readonly]::placeholder, .form-control-
 /*** form group con tooltip **/
 .form-group .input-group-text-info {
   font-size: 1em;
+  display: inline-block;
 }
 .form-group .input-group-text-info i {
-  font-size: 1.1em;
-  top: 0;
+  font-size: 1.2em;
   display: block;
   color: #0079C0;
   padding-left: 0.3em;

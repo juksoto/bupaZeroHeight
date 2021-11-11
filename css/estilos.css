@@ -1493,12 +1493,12 @@ input[type=search].form-control-plaintext[readonly]::placeholder, .form-control-
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 10rem;
-  min-width: 10rem;
-  max-width: 10rem;
   padding-top: 0.5rem;
   padding-right: 1rem;
   text-align: center;
+  width: 10rem;
+  min-width: 10rem;
+  max-width: 10rem;
 }
 .wizzard-steps .wizzard-step-content .step-text {
   color: #919295;
@@ -1535,9 +1535,9 @@ input[type=search].form-control-plaintext[readonly]::placeholder, .form-control-
   position: absolute;
   top: 50%;
   left: -2px;
-  width: calc(10rem + 1rem - 2.25rem);
   height: 2px;
   transform: translate(-100%, -50%);
+  width: calc(10rem + 1rem - 2.25rem);
   color: rgba(0, 51, 91, 0.4);
   background-color: currentColor;
   -webkit-transform: translate(-100%, -50%);
@@ -1588,6 +1588,56 @@ input[type=search].form-control-plaintext[readonly]::placeholder, .form-control-
 }
 .wizzard-steps .step-warning .step-text {
   color: #212121;
+}
+@media screen and (max-width: 992px) {
+  .wizzard-steps .wizzard-step-content {
+    width: 6rem;
+    min-width: 6rem;
+    max-width: 6rem;
+  }
+  .wizzard-steps .step-circle::before {
+    width: calc(6rem + 1rem - 2.25rem);
+  }
+}
+@media screen and (max-width: 992px) {
+  .wizzard-steps .wizzard-step-content {
+    width: 6rem;
+    min-width: 6rem;
+    max-width: 6rem;
+  }
+  .wizzard-steps .step-circle::before {
+    width: calc(6rem + 1rem - 2.25rem);
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  .wizzard-steps .wizzard-step-content {
+    width: 8rem;
+    min-width: 8rem;
+    max-width: 8rem;
+  }
+  .wizzard-steps .step-circle::before {
+    width: calc(8rem + 1rem - 2.25rem);
+  }
+}
+@media (min-width: 1024px) and (max-width: 1299px) {
+  .wizzard-steps .wizzard-step-content {
+    width: 10rem;
+    min-width: 10rem;
+    max-width: 10rem;
+  }
+  .wizzard-steps .step-circle::before {
+    width: calc(10rem + 1rem - 2.25rem);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .wizzard-steps .wizzard-step-content {
+    width: 12rem;
+    min-width: 12rem;
+    max-width: 12rem;
+  }
+  .wizzard-steps .step-circle::before {
+    width: calc(12rem + 1rem - 2.25rem);
+  }
 }
 
 /** end step warning **/

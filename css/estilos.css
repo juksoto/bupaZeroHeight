@@ -1161,16 +1161,20 @@ input[type=search].form-control-plaintext[readonly]::placeholder, .form-control-
   border-bottom-left-radius: 0.25rem;
 }
 
-.bp-list-striped--even li:nth-child(even) {
+.bp-list-striped--even > i:nth-child(even) {
   background-color: #F5FAFF;
 }
 
-.bp-list-striped--odd li:nth-child(odd) {
+.bp-list-striped--odd > li:nth-child(odd) {
   background-color: #F5FAFF;
 }
 
-.bp-list-hover li:hover {
+.bp-list-hover > li:hover {
   background-color: #BFDDF1;
+}
+
+.bp-list-style-disc {
+  list-style: disc;
 }
 
 /** end lists componentes **/
@@ -1260,32 +1264,64 @@ input[type=search].form-control-plaintext[readonly]::placeholder, .form-control-
   background-color: #0079C0;
 }
 
+.bp-bg_primary--important {
+  background-color: #0079C0 !important;
+}
+
 .bp-bg_white {
   background-color: #fff;
+}
+
+.bp-bg_white--important {
+  background-color: #fff !important;
 }
 
 .bp-bg_cyan-25 {
   background-color: #BFDDF1;
 }
 
+.bp-bg_cyan-25--important {
+  background-color: #BFDDF1 !important;
+}
+
 .bp-bg_cyan-50 {
   background-color: #7FBCE3;
+}
+
+.bp-bg_cyan-50--important {
+  background-color: #7FBCE3 !important;
 }
 
 .bp-bg_cyan-table {
   background-color: #F5FAFF;
 }
 
+.bp-bg_cyan-table--important {
+  background-color: #F5FAFF !important;
+}
+
 .bp-bg_cyan-light {
   background-color: #ECF6FF;
+}
+
+.bp-bg_cyan-light--important {
+  background-color: #ECF6FF !important;
 }
 
 .bp-bg_grey-dark {
   background-color: #212121;
 }
 
+.bp-bg_grey-dark--important {
+  background-color: #212121 !important;
+}
+
 .bp-bg_grey-light {
   background-color: #F1EFEB;
+}
+
+.bp-bg_grey-light--important {
+  background-color: #F1EFEB !important;
 }
 
 .bp-bg-white--opacity {
@@ -1589,7 +1625,14 @@ input[type=search].form-control-plaintext[readonly]::placeholder, .form-control-
 .wizzard-steps .step-warning .step-text {
   color: #212121;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
+  .wizzard-steps .wizzard-step-content {
+    width: 5rem;
+    min-width: 5rem;
+    max-width: 5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
   .wizzard-steps .wizzard-step-content {
     width: 6rem;
     min-width: 6rem;

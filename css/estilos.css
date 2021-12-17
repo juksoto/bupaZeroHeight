@@ -566,6 +566,7 @@ blockquote {
   color: #fff;
 }
 
+/* estilo outline y secundario */
 .bp-accordion-outline .card-header {
   border: 0;
   -webkit-box-shadow: none;

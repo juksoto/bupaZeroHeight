@@ -1291,7 +1291,7 @@ input[type=search].form-control-plaintext[readonly]::placeholder, .form-control-
   border-bottom-left-radius: 0.25rem;
 }
 
-.bp-list-striped--even > i:nth-child(even) {
+.bp-list-striped--even > li:nth-child(even) {
   background-color: #F5FAFF;
 }
 

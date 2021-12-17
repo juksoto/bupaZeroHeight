@@ -566,6 +566,38 @@ blockquote {
   color: #fff;
 }
 
+.bp-acordion-outline .card-header {
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 2px dashed #0079C0;
+}
+.bp-acordion-outline .card-header h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.bp-acordion-outline .card-header button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0;
+}
+.bp-acordion-outline .card {
+  border: 0;
+}
+.bp-acordion-outline.bp-accordion-outline--secondary .card-header {
+  border-color: #00335B;
+}
+.bp-acordion-outline.bp-accordion-outline--secondary .card-header h2 {
+  color: #00335B;
+}
+.bp-acordion-outline.bp-accordion-outline--secondary .card-header button {
+  color: #00335B;
+}
+.bp-acordion-outline.bp-accordion-outline--secondary .card-header button:hover, .bp-acordion-outline.bp-accordion-outline--secondary .card-header button:focus {
+  color: #fff;
+}
+
 /** 
 * end accordion component
 **/

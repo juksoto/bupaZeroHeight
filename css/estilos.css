@@ -4,6 +4,44 @@
     max-width: 1200px;
   }
 }
+/** 
+* border colors
+**/
+.bp-border-color_black {
+  border-color: #000;
+}
+
+.bp-border-color_danger {
+  border-color: #eb4d4b;
+}
+
+.bp-border-color_white {
+  border-color: #fff;
+}
+
+.bp-border-color_primary {
+  border-color: #0079C0;
+}
+
+.bp-border-color_secondary {
+  border-color: #00335B;
+}
+
+.bp-border-color_grey-dark {
+  border-color: #212121;
+}
+
+.bp-border-color_grey-medium {
+  border-color: #919295;
+}
+
+.bp-border-color_grey-light {
+  border-color: #F1EFEB;
+}
+
+/** 
+* end border colors
+**/
 /** end utilidades de css **/
 /* Tags Generals CSS */
 html {

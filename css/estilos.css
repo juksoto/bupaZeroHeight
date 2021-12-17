@@ -7,6 +7,50 @@
 /** 
 * border colors
 **/
+.bp-border {
+  border: 1px solid #919295;
+}
+
+.bp-border-top {
+  border-top: 1px solid #919295;
+}
+
+.bp-border-bottom {
+  border-bottom: 1px solid #919295;
+}
+
+.bp-borde-left {
+  border-left: 1px solid #919295;
+}
+
+.bp-border-right {
+  border: 1px solid #919295;
+}
+
+.bp-border {
+  border: 1px solid #919295;
+}
+
+.bp-border-0 {
+  border: 0 !important;
+}
+
+.bp-border-top-0 {
+  border-top: 0 !important;
+}
+
+.bp-border-right-0 {
+  border-right: 0 !important;
+}
+
+.bp-border-bottom-0 {
+  border-bottom: 0 !important;
+}
+
+.bp-border-left-0 {
+  border-left: 0 !important;
+}
+
 .bp-border-color_black {
   border-color: #000;
 }

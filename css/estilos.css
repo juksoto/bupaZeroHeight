@@ -276,6 +276,10 @@ h6 .bp-h1,
   color: #008385;
 }
 
+.bp-color_blurple {
+  color: #0D1AC3;
+}
+
 .bp-color_burgundy {
   color: #942151;
 }
@@ -368,6 +372,10 @@ h6 .bp-h1,
 
 .bp-color_teal--important {
   color: #008385 !important;
+}
+
+.bp-color_blurple--important {
+  color: #0D1AC3 !important;
 }
 
 .bp-color_burgundy--important {

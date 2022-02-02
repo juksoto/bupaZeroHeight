@@ -4,6 +4,18 @@
     max-width: 1200px;
   }
 }
+.maxwidth-90p {
+  max-width: 90%;
+}
+
+.maxwidth-240 {
+  max-width: 240px;
+}
+
+.maxwidth-160 {
+  max-width: 160px;
+}
+
 /** 
 * border colors
 **/
@@ -56,7 +68,7 @@
 }
 
 .bp-border-color_danger {
-  border-color: #eb4d4b;
+  border-color: #CC181E;
 }
 
 .bp-border-color_white {
@@ -140,6 +152,7 @@ body {
   font-size: 0.875rem;
   font-family: "Montserrat", sans-serif;
   color: #212121;
+  font-weight: 500;
 }
 
 /** CSS Material Icons ***/
@@ -154,32 +167,47 @@ body {
  * Heading 5: 16px
  * Heading 6: 14px
 **/
-h1, .bp-h1 {
+h1,
+.bp-h1 {
   font-size: 1.5rem;
 }
 
-h2, .bp-h2 {
+h2,
+.bp-h2 {
   font-size: 1.375rem;
 }
 
-h3, .bp-h3 {
+h3,
+.bp-h3 {
   font-size: 1.25rem;
 }
 
-h4, .bp-h4 {
+h4,
+.bp-h4 {
   font-size: 1.125rem;
 }
 
-h5, .bp-h5 {
+h5,
+.bp-h5 {
   font-size: 1rem;
 }
 
-h6, .bp-h6 {
+h6,
+.bp-h6 {
   font-size: 0.875rem;
 }
 
-h1, h2, h3, h4, h5, h6 .bp-h1,
-.bp-h2, .bp-h3, .bp-h4, .bp-h5, .bp-h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 .bp-h1,
+.bp-h2,
+.bp-h3,
+.bp-h4,
+.bp-h5,
+.bp-h6 {
   font-weight: bold;
   color: #0079C0;
 }
@@ -193,7 +221,7 @@ h1, h2, h3, h4, h5, h6 .bp-h1,
 }
 
 .bp-color_danger {
-  color: #eb4d4b;
+  color: #CC181E;
 }
 
 .bp-color_white {
@@ -228,6 +256,58 @@ h1, h2, h3, h4, h5, h6 .bp-h1,
   color: #F1EFEB;
 }
 
+.bp-color_color_orange {
+  color: #EC7000;
+}
+
+.bp-color_color_lime {
+  color: #678004;
+}
+
+.bp-color_color_green {
+  color: #007a3d;
+}
+
+.bp-color_color_green-dark {
+  color: #18542c;
+}
+
+.bp-color_color_teal {
+  color: #008385;
+}
+
+.bp-color_color_burgundy {
+  color: #942151;
+}
+
+.bp-color_color_fucshia {
+  color: #c6007e;
+}
+
+.bp-color_color_violet {
+  color: #a4219b;
+}
+
+.bp-color_color_purple {
+  color: #6a2ca1;
+}
+
+.bp-color_color_error {
+  color: #CC181E;
+}
+
+.bp-color_color_success {
+  color: #6ab04c;
+}
+
+.bp-color_color_info {
+  color: #45aaf2;
+}
+
+.bp-color_color_warning {
+  color: #f9ca24;
+}
+
 /*** end typography colors **/
 /*** typography colors with !important **/
 .bp-color_black--important {
@@ -235,7 +315,7 @@ h1, h2, h3, h4, h5, h6 .bp-h1,
 }
 
 .bp-color_danger--important {
-  color: #eb4d4b !important;
+  color: #CC181E !important;
 }
 
 .bp-color_white--important {
@@ -268,6 +348,58 @@ h1, h2, h3, h4, h5, h6 .bp-h1,
 
 .bp-color_grey-light--important {
   color: #F1EFEB !important;
+}
+
+.bp-color_color_orange--important {
+  color: #EC7000 !important;
+}
+
+.bp-color_color_lime--important {
+  color: #678004 !important;
+}
+
+.bp-color_color_green--important {
+  color: #007a3d !important;
+}
+
+.bp-color_color_green-dark--important {
+  color: #18542c !important;
+}
+
+.bp-color_color_teal--important {
+  color: #008385 !important;
+}
+
+.bp-color_color_burgundy--important {
+  color: #942151 !important;
+}
+
+.bp-color_color_fucshia--important {
+  color: #c6007e !important;
+}
+
+.bp-color_color_violet--important {
+  color: #a4219b !important;
+}
+
+.bp-color_color_purple--important {
+  color: #6a2ca1 !important;
+}
+
+.bp-color_color_error--important {
+  color: #CC181E !important;
+}
+
+.bp-color_color_success--important {
+  color: #6ab04c !important;
+}
+
+.bp-color_color_info--important {
+  color: #45aaf2 !important;
+}
+
+.bp-color_color_warning--important {
+  color: #f9ca24 !important;
 }
 
 /*** end typography colors with !important **/
@@ -417,18 +549,18 @@ blockquote {
 
 .bp-alert-danger,
 .alert-danger {
-  background-color: #f8c1c0;
-  border-color: #f18281;
-  color: #380706;
+  background-color: #f5a7a9;
+  border-color: #ea4e54;
+  color: #290506;
 }
 .bp-alert-danger a,
 .alert-danger a {
-  color: #380706;
+  color: #290506;
 }
 .bp-alert-danger a:hover, .bp-alert-danger a:focus,
 .alert-danger a:hover,
 .alert-danger a:focus {
-  color: #a71413;
+  color: #7a0e12;
 }
 
 .bp-alert-warning,
@@ -502,13 +634,13 @@ blockquote {
 }
 
 .alert-danger .text-danger {
-  color: #380706;
+  color: #290506;
 }
 .alert-danger .text-danger a {
-  color: #380706;
+  color: #290506;
 }
 .alert-danger .text-danger a:hover, .alert-danger .text-danger a:focus {
-  color: #a71413;
+  color: #7a0e12;
 }
 
 /** 
@@ -546,7 +678,7 @@ blockquote {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 1.125rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 .accordion .card-header button:hover, .accordion .card-header button:focus,
@@ -875,7 +1007,7 @@ blockquote {
 }
 
 .btn-danger--red {
-  color: #eb4d4b;
+  color: #CC181E;
 }
 
 /**
@@ -1757,14 +1889,14 @@ input[type=search].form-control-plaintext[readonly]::placeholder, .form-control-
 }
 .wizzard-steps .step-error .step-circle {
   color: #fff;
-  background-color: #eb4d4b;
+  background-color: #CC181E;
   border-color: #fff;
 }
 .wizzard-steps .step-error .step-circle::before {
-  color: #eb4d4b;
+  color: #CC181E;
 }
 .wizzard-steps .step-error .step-text {
-  color: #eb4d4b;
+  color: #CC181E;
 }
 .wizzard-steps .step-success .step-circle {
   color: #fff;

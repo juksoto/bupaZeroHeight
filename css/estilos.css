@@ -1563,6 +1563,14 @@ input[type=search].form-control-plaintext[readonly]::placeholder, .form-control-
   background-color: #0079C0 !important;
 }
 
+.bp-bg_secondary {
+  background-color: #00335B;
+}
+
+.bp-bg_secondary--important {
+  background-color: #00335B !important;
+}
+
 .bp-bg_white {
   background-color: #fff;
 }

@@ -875,10 +875,10 @@ blockquote {
 
 .btn-secondary,
 .bp-btn-secondary {
-  background-color: #00335B;
+  background-color: #02538A;
   color: #fff;
   border: 0;
-  border: 2px solid #00335B;
+  border: 2px solid #02538A;
 }
 .btn-secondary:visited,
 .bp-btn-secondary:visited {
@@ -903,9 +903,9 @@ blockquote {
 
 .btn-secondary--important,
 .bp-btn-secondary--important {
-  background-color: #00335B !important;
+  background-color: #02538A !important;
   color: #fff !important;
-  border: 2px solid #00335B !important;
+  border: 2px solid #02538A !important;
 }
 .btn-secondary--important:hover:not([disabled]), .btn-secondary--important:focus:not([disabled]), .btn-secondary--important.active:not([disabled]),
 .bp-btn-secondary--important:hover:not([disabled]),
@@ -940,12 +940,12 @@ blockquote {
 .btn-outline-secondary,
 .bp-btn-outline-secondary {
   background-color: transparent;
-  color: #00548C;
-  border: 2px solid #00548C;
+  color: #02538A;
+  border: 2px solid #02538A;
 }
 .btn-outline-secondary:visited,
 .bp-btn-outline-secondary:visited {
-  color: #00548C;
+  color: #02538A;
 }
 .btn-outline-secondary:hover, .btn-outline-secondary:focus,
 .bp-btn-outline-secondary:hover,
@@ -971,12 +971,12 @@ blockquote {
 .btn-outline-secondary--important,
 .bp-btn-outline-secondary--important {
   background-color: transparent;
-  color: #00548C !important;
-  border: 2px solid #00548C !important;
+  color: #02538A !important;
+  border: 2px solid #02538A !important;
 }
 .btn-outline-secondary--important:visited,
 .bp-btn-outline-secondary--important:visited {
-  color: #00548C !important;
+  color: #02538A !important;
 }
 .btn-outline-secondary--important:hover, .btn-outline-secondary--important:focus,
 .bp-btn-outline-secondary--important:hover,

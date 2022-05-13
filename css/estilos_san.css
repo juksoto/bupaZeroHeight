@@ -160,16 +160,76 @@
   font-style: italic;
   font-display: swap;
 }
+.font-metropolis {
+  font-family: "Metropolis";
+}
+
+/** utils font **/
+.bp-font-weight-100 {
+  font-weight: 100;
+}
+
+.bp-font-weight-200 {
+  font-weight: 200;
+}
+
+.bp-font-weight-300 {
+  font-weight: 300;
+}
+
+.bp-font-weight-400 {
+  font-weight: 400;
+}
+
+.bp-font-weight-500 {
+  font-weight: 500;
+}
+
+.bp-font-weight-600 {
+  font-weight: 600;
+}
+
+.bp-font-weight-700 {
+  font-weight: 700;
+}
+
+.bp-font-weight-800 {
+  font-weight: 800;
+}
+
+.bp-font-weight-900 {
+  font-weight: 900;
+}
+
+.bp-font-weight-medium {
+  font-weight: 500;
+}
+
+.bp-font-weight-semi {
+  font-weight: 600;
+}
+
+.bp-font-weight-bold {
+  font-weight: 700;
+}
+
 /* Tags Generals CSS */
 html {
   font-size: 16px;
 }
 
 body {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-family: "Metropolis";
   color: #212121;
   font-weight: 500;
+  line-height: 1.2rem;
+}
+
+* {
+  font-family: "Metropolis";
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 /** CSS Typography **/

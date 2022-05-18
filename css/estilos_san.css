@@ -272,67 +272,43 @@ body {
 h1,
 .bp-h1 {
   font-size: 1.875rem;
-}
-
-h1,
-.bp-h1 {
+  color: #212121;
   font-weight: bold;
-  color: #00335B;
 }
 
 h2,
 .bp-h2 {
   font-size: 1.625rem;
-}
-
-h2,
-.bp-h2 {
+  color: #212121;
   font-weight: bold;
-  color: #00335B;
 }
 
 h3,
 .bp-h3 {
   font-size: 1.375rem;
-}
-
-h3,
-.bp-h3 {
+  color: #212121;
   font-weight: bold;
-  color: #00335B;
 }
 
 h4,
 .bp-h4 {
   font-size: 1.125rem;
-}
-
-h4,
-.bp-h4 {
+  color: #212121;
   font-weight: bold;
-  color: #00335B;
 }
 
 h5,
 .bp-h5 {
   font-size: 1rem;
-}
-
-h5,
-.bp-h5 {
+  color: #212121;
   font-weight: bold;
-  color: #00335B;
 }
 
 h6,
 .bp-h6 {
   font-size: 0.875rem;
-}
-
-h6,
-.bp-h6 {
+  color: #212121;
   font-weight: bold;
-  color: #00335B;
 }
 
 /***  end  heading size **/
@@ -606,11 +582,11 @@ blockquote {
 }
 
 .bp-color-title-1 {
-  color: #212121;
+  color: #00335B;
 }
 
 .bp-color-title-2 {
-  color: #00335B;
+  color: #212121;
 }
 
 .bp-color-text {

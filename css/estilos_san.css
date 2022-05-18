@@ -201,16 +201,40 @@
   font-weight: 900;
 }
 
-.bp-font-weight-medium {
+.bp-font-thin {
+  font-weight: 100;
+}
+
+.bp-font-extra-light {
+  font-weight: 200;
+}
+
+.bp-font-light {
+  font-weight: 300;
+}
+
+.bp-font-regular {
+  font-weight: 400;
+}
+
+.bp-font-medium {
   font-weight: 500;
 }
 
-.bp-font-weight-semi {
+.bp-font-semibold {
   font-weight: 600;
 }
 
-.bp-font-weight-bold {
+.bp-font-bold {
   font-weight: 700;
+}
+
+.bp-font-extra-bold {
+  font-weight: 800;
+}
+
+.bp-font-black {
+  font-weight: 900;
 }
 
 /* Tags Generals CSS */
@@ -361,43 +385,36 @@ h6,
 ** body size 
 * [description] Style for content or long parragraph
 **/
-.body-xxl,
 .bp-body-xxl {
   font-size: 1.375rem;
   line-height: 1.7875rem;
 }
 
-.body-xl,
 .bp-body-xl {
   font-size: 1.25rem;
   line-height: 1.625rem;
 }
 
-.body-lg,
 .bp-body-lg {
   font-size: 1.125rem;
   line-height: 1.4625rem;
 }
 
-.body-md,
 .bp-body-md {
   font-size: 1rem;
   line-height: 1.3rem;
 }
 
-.body-sm,
 .bp-body-sm {
   font-size: 0.875rem;
   line-height: 1.1375rem;
 }
 
-.body-xs,
 .bp-body-xs {
   font-size: 0.75rem;
   line-height: 0.975rem;
 }
 
-.body-xxs,
 .bp-body-xxs {
   font-size: 0.625rem;
   line-height: 0.8125rem;
@@ -408,43 +425,36 @@ h6,
 ** data size 
 * [description] Create class for other sizes
 **/
-.data-xxl,
 .bp-data-xxl {
   font-size: 1.375rem;
   line-height: 1.65rem;
 }
 
-.data-xl,
 .bp-data-xl {
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
 
-.data-lg,
 .bp-data-lg {
   font-size: 1.125rem;
   line-height: 1.35rem;
 }
 
-.data-md,
 .bp-data-md {
   font-size: 1rem;
   line-height: 1.2rem;
 }
 
-.data-sm,
 .bp-data-sm {
   font-size: 0.875rem;
   line-height: 1.05rem;
 }
 
-.data-xs,
 .bp-data-xs {
   font-size: 0.75rem;
   line-height: 0.9rem;
 }
 
-.data-xxs,
 .bp-data-xxs {
   font-size: 0.625rem;
   line-height: 0.75rem;
@@ -454,6 +464,76 @@ h6,
 /***
 ** end tipography size 
 **/
+/** label component **/
+label {
+  font-size: 1rem;
+}
+
+/** end label component **/
+/** etiquetas de enlace **/
+a {
+  color: #0079C8;
+  text-decoration: underline;
+}
+a:hover, a:focus {
+  color: #00548C;
+}
+a:visited {
+  color: #00548C;
+}
+
+/** end etiquetas de enlace **/
+/* elementos de texto html 5*/
+mark {
+  background-color: #ECF6FF;
+}
+
+blockquote {
+  padding: 1.5rem;
+  background-color: #ECF6FF;
+  border: 1px solid #BFDDF1;
+}
+
+/** end elementos de texto html 5**/
+/*** utilties ***/
+/***** end utilities ***/
+/** text utiities **/
+.bp-text-justify {
+  text-align: justify !important;
+}
+
+.bp-text-nowrap {
+  white-space: nowrap !important;
+}
+
+.bp-text-left {
+  text-align: left !important;
+}
+
+.bp-text-right {
+  text-align: right !important;
+}
+
+.bp-text-center {
+  text-align: center !important;
+}
+
+.bp-text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.bp-text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.bp-text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.bp-font-italic {
+  font-style: italic !important;
+}
+
 /** 
 * typography colors
 **/
@@ -473,20 +553,16 @@ h6,
   color: #00335B;
 }
 
-.bp-color-cyan {
-  color: #0079C0;
+.bp-color-title-1 {
+  color: #212121;
 }
 
-.bp-color-cyan-active {
-  color: #00548C;
-}
-
-.bp-color-navy {
+.bp-color-title-2 {
   color: #00335B;
 }
 
-.bp-color-navy-active {
-  color: #002949;
+.bp-color-text {
+  color: #212121;
 }
 
 .bp-color-grey-black {
@@ -497,64 +573,8 @@ h6,
   color: #6C6E71;
 }
 
-.bp-color-grey-75 {
-  color: #919295;
-}
-
-.bp-color-grey-active {
-  color: #4B4D4F;
-}
-
-.bp-color-orange {
-  color: #EC7000;
-}
-
-.bp-color-lime {
-  color: #678004;
-}
-
-.bp-color-green {
-  color: #007a3d;
-}
-
-.bp-color-green-dark {
-  color: #18542c;
-}
-
-.bp-color-teal {
-  color: #008385;
-}
-
-.bp-color-blurple {
-  color: #0D1AC3;
-}
-
-.bp-color-burgundy {
-  color: #942151;
-}
-
-.bp-color-fucshia {
-  color: #c6007e;
-}
-
-.bp-color-violet {
-  color: #a4219b;
-}
-
-.bp-color-purple {
-  color: #6a2ca1;
-}
-
-.bp-color-red {
-  color: #D81E05;
-}
-
-.bp-color-yellow {
-  color: #FFC300;
-}
-
-.bp-color-gold {
-  color: #AE9962;
+.bp-color-grey-border {
+  color: #6C6E71;
 }
 
 .bp-color-text-ok {
@@ -617,51 +637,73 @@ h6,
   color: #4D8CF5;
 }
 
-.bp-color-title-1 {
-  color: #212121;
-}
-
-.bp-color-title-2 {
-  color: #00335B;
-}
-
-.bp-color-text {
-  color: #212121;
-}
-
 /*** end typography colors **/
-/*** end size typography ***/
-/** label component **/
-label {
+/** end text utilitie **/
+/** CSS Material Icons ***/
+.bp-icon-1x {
+  font-size: 1rem;
+}
+
+.bp-icon-2x {
+  font-size: 2rem;
+}
+
+.bp-icon-3x {
+  font-size: 3rem;
+}
+
+.bp-icon-4x {
+  font-size: 4rem;
+}
+
+.bp-icon-5x {
+  font-size: 5rem;
+}
+
+.bp-icon-6x {
+  font-size: 6rem;
+}
+
+.bp-icon-7x {
+  font-size: 7rem;
+}
+
+.bp-icon-8x {
+  font-size: 8rem;
+}
+
+.bp-icon-9x {
+  font-size: 9rem;
+}
+
+.bp-icon-10x {
+  font-size: 10rem;
+}
+
+.bp-icon-xxxs {
+  font-size: 0.5rem;
+}
+
+.bp-icon-xxs {
+  font-size: 0.675rem;
+}
+
+.bp-icon-xs {
+  font-size: 0.75rem;
+}
+
+.bp-icon-sm {
   font-size: 0.875rem;
 }
 
-/** end label component **/
-/** etiquetas de enlace **/
-a {
-  color: #0079C8;
-  text-decoration: underline;
-}
-a:hover, a:focus {
-  color: #00548C;
-}
-a:visited {
-  color: #00548C;
+.bp-icon-lg {
+  font-size: 1.25rem;
 }
 
-/** end etiquetas de enlace **/
-/* elementos de texto html 5*/
-mark {
-  background-color: #ECF6FF;
+.bp-icon-xl {
+  font-size: 1.5rem;
 }
 
-blockquote {
-  padding: 1.5rem;
-  background-color: #ECF6FF;
-  border: 1px solid #BFDDF1;
-}
-
-/** end elementos de texto html 5**/
 /*** utilidades de css **/
 @media screen and (min-width: 1200px) {
   .maxwidth-1200 {

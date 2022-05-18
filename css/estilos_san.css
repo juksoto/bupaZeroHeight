@@ -2302,6 +2302,200 @@ blockquote {
 }
 /** end spacing utilities ***/
 /** 
+* border colors
+**/
+.bp-border {
+  border: 1px solid #D9D9D9;
+}
+
+.bp-border-top {
+  border-top: 1px solid #D9D9D9;
+}
+
+.bp-border-bottom {
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.bp-borde-left {
+  border-left: 1px solid #D9D9D9;
+}
+
+.bp-border-right {
+  border: 1px solid #D9D9D9;
+}
+
+.bp-border {
+  border: 1px solid #D9D9D9;
+}
+
+.bp-border-0 {
+  border: 0 !important;
+}
+
+.bp-border-top-0 {
+  border-top: 0 !important;
+}
+
+.bp-border-right-0 {
+  border-right: 0 !important;
+}
+
+.bp-border-bottom-0 {
+  border-bottom: 0 !important;
+}
+
+.bp-border-left-0 {
+  border-left: 0 !important;
+}
+
+.bp-border-color-black {
+  border-color: #000;
+}
+
+.bp-border-color-white {
+  border-color: #fff;
+}
+
+.bp-border-color-primary {
+  border-color: #0079C8;
+}
+
+.bp-border-color-secondary {
+  border-color: #00335B;
+}
+
+.bp-border-color-active {
+  border-color: #00548C;
+}
+
+.bp-border-color-grey-border {
+  border-color: #D9D9D9;
+}
+
+.bp-border-color-color-grey-black {
+  border-color: #212121;
+}
+
+.bp-border-color-color-grey {
+  border-color: #6C6E71;
+}
+
+.bp-border-color-ok {
+  border-color: #439135;
+}
+
+.bp-border-color-info {
+  border-color: #0079C8;
+}
+
+.bp-border-color-alert {
+  border-color: #635A15;
+}
+
+.bp-border-color-error {
+  border-color: #D81E05;
+}
+
+.bp-border-color-color-online {
+  border-color: #7ED321;
+}
+
+.bp-border-color-color-busy {
+  border-color: #FE5000;
+}
+
+.bp-border-color-color-offline {
+  border-color: #9B9B9B;
+}
+
+.bp-border-color-disabled {
+  border-color: #BFCCD6;
+}
+
+.bp-border-color-color-active {
+  border-color: #00548C;
+}
+
+.bp-border-color {
+  border: 1px solid #D9D9D9;
+}
+
+.bp-border-width--1px {
+  border-width: 1px;
+}
+
+.bp-border-width--1px--important {
+  border-width: 1px !important;
+}
+
+.bp-border-width--2px {
+  border-width: 2px;
+}
+
+.bp-border-width--2px--important {
+  border-width: 2px !important;
+}
+
+.bp-border-width--3px {
+  border-width: 3px;
+}
+
+.bp-border-width--3px--important {
+  border-width: 3px !important;
+}
+
+.bp-border-width--4px {
+  border-width: 4px;
+}
+
+.bp-border-width--4px--important {
+  border-width: 4px !important;
+}
+
+.bp-border-width--5px {
+  border-width: 5px;
+}
+
+.bp-border-width--5px--important {
+  border-width: 5px !important;
+}
+
+/** 
+* end border colors
+**/
+/*** utilidades de css **/
+@media screen and (min-width: 1200px) {
+  .maxwidth-1200 {
+    max-width: 1200px;
+  }
+}
+.maxwidth-90p {
+  max-width: 90%;
+}
+
+.maxwidth-240 {
+  max-width: 240px;
+}
+
+.maxwidth-160 {
+  max-width: 160px;
+}
+
+.mw-100 {
+  max-width: 100% !important;
+}
+
+.mh-100 {
+  max-height: 100% !important;
+}
+
+/** extra css **/
+.overflow-visible {
+  overflow: visible;
+}
+
+/** end utilidades de css **/
+/** 
 * container component
 **/
 /** section **/

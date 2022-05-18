@@ -691,7 +691,6 @@ blockquote {
 
 /*** end typography colors **/
 /** end text utilitie **/
-/** CSS Material Icons ***/
 .bp-icon {
   font-size: 1rem;
 }
@@ -2368,7 +2367,7 @@ blockquote {
   background-color: #DBF1FA;
 }
 
-.bp-bg_info--important {
+.bp-bg-info--important {
   background-color: #DBF1FA !important;
 }
 
@@ -2376,7 +2375,7 @@ blockquote {
   background-color: #EFFFDA;
 }
 
-.bp-bg_alert--important {
+.bp-bg-alert--important {
   background-color: #EFFFDA !important;
 }
 
@@ -2384,7 +2383,7 @@ blockquote {
   background-color: #EFFFDA;
 }
 
-.bp-bg_ok--important {
+.bp-bg-ok--important {
   background-color: #EFFFDA !important;
 }
 
@@ -2392,7 +2391,7 @@ blockquote {
   background-color: #FCF1F0;
 }
 
-.bp-bg_error--important {
+.bp-bg-error--important {
   background-color: #FCF1F0 !important;
 }
 
@@ -2400,7 +2399,7 @@ blockquote {
   background-color: #F2F5F7;
 }
 
-.bp-bg_disabled--important {
+.bp-bg-disabled--important {
   background-color: #F2F5F7 !important;
 }
 
@@ -2408,15 +2407,15 @@ blockquote {
   background-color: #fff;
 }
 
-.bp-bg_white--important {
+.bp-bg-white--important {
   background-color: #fff !important;
 }
 
-.bp-bg-select-area {
+.bp-bg-selected-area {
   background-color: #ECF6FF;
 }
 
-.bp-bg_select-area--important {
+.bp-bg-selected-area--important {
   background-color: #ECF6FF !important;
 }
 
@@ -2424,7 +2423,7 @@ blockquote {
   background-color: #F5FAFF;
 }
 
-.bp-bg_table--important {
+.bp-bg-table--important {
   background-color: #F5FAFF !important;
 }
 
@@ -2432,15 +2431,31 @@ blockquote {
   background-color: #BFDDF1;
 }
 
-.bp-bg_table-hover--important {
+.bp-bg-table-hover--important {
   background-color: #BFDDF1 !important;
+}
+
+.bp-bg-cyan-05 {
+  background-color: #F2F8FC;
+}
+
+.bp-bg-cyan-05--important {
+  background-color: #F2F8FC !important;
+}
+
+.bp-bg-cyan-10 {
+  background-color: #E6F2FA;
+}
+
+.bp-bg-cyan-10--important {
+  background-color: #E6F2FA !important;
 }
 
 .bp-bg-cyan-25 {
   background-color: #BFDDF1;
 }
 
-.bp-bg_cyan-25--important {
+.bp-bg-cyan-25--important {
   background-color: #BFDDF1 !important;
 }
 
@@ -2448,47 +2463,23 @@ blockquote {
   background-color: #7FBCE3;
 }
 
-.bp-bg_cyan-50--important {
+.bp-bg-cyan-50--important {
   background-color: #7FBCE3 !important;
 }
 
-.bp-bg-grey-75 {
-  background-color: #919295;
+.bp-bg-grey-light {
+  background-color: #F2F2F2;
 }
 
-.bp-bg_grey-75--important {
-  background-color: #919295 !important;
-}
-
-.bp-bg-grey-50 {
-  background-color: #B5B6B8;
-}
-
-.bp-bg_grey-50--important {
-  background-color: #B5B6B8 !important;
-}
-
-.bp-bg-grey-25 {
-  background-color: #DADBDB;
-}
-
-.bp-bg_grey-25--important {
-  background-color: #DADBDB !important;
-}
-
-.bp-bg-grey-light-0 {
-  background-color: #E2E2E3;
-}
-
-.bp-bg_grey-light-0--important {
-  background-color: #E2E2E3 !important;
+.bp-bg-grey-light--important {
+  background-color: #F2F2F2 !important;
 }
 
 .bp-bg-grey-light-1 {
   background-color: #E6E6E6;
 }
 
-.bp-bg_grey-light-1--important {
+.bp-bg-grey-light-1--important {
   background-color: #E6E6E6 !important;
 }
 
@@ -2496,23 +2487,23 @@ blockquote {
   background-color: #F0F0F0;
 }
 
-.bp-bg_grey-light-2--important {
+.bp-bg-grey-light-2--important {
   background-color: #F0F0F0 !important;
 }
 
 .bp-bg-grey-light-3 {
-  background-color: #F7F7F7;
+  background-color: #F5F5F5;
 }
 
-.bp-bg_grey-light-3--important {
-  background-color: #F7F7F7 !important;
+.bp-bg-grey-light-3--important {
+  background-color: #F5F5F5 !important;
 }
 
 .bp-bg-warm-grey {
   background-color: #F1EFEB;
 }
 
-.bp-bg_warm-grey--important {
+.bp-bg-warm-grey--important {
   background-color: #F1EFEB !important;
 }
 

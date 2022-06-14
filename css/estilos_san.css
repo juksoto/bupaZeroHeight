@@ -5033,12 +5033,46 @@ th {
   border: 1px solid #0079C8;
   font-weight: bold;
 }
+.ngx-pagination li.small-screen {
+  text-decoration: none;
+  padding: 0;
+  border-radius: 0.2rem;
+  display: block;
+  font-size: 0.875rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  min-height: 32px;
+  margin: 0 0.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  color: #212121;
+  border: 0;
+  font-weight: bold;
+}
 .ngx-pagination li .show-for-sr {
   display: none;
 }
 @media screen and (min-width: 768px) {
   .ngx-pagination .small-screen {
-    display: none;
+    display: none !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ngx-pagination li {
+    display: none !important;
+  }
+  .ngx-pagination li.pagination-previous, .ngx-pagination li.pagination-next, .ngx-pagination li.small-screen {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
 }
 

@@ -4754,6 +4754,14 @@ blockquote {
   background-color: #7FBCE3 !important;
 }
 
+.bp-bg-grey-border {
+  background-color: #D9D9D9;
+}
+
+.bp-bg-grey-border--important {
+  background-color: #D9D9D9 !important;
+}
+
 .bp-bg-grey-light {
   background-color: #F2F2F2;
 }
@@ -4960,30 +4968,78 @@ th {
           justify-content: center;
 }
 
+.ngx-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.ngx-pagination li {
+  font-size: 0.875rem;
+}
 .ngx-pagination li a {
   text-decoration: none;
   color: #212121;
-  border-color: #D9D9D9;
-  padding: 0.5rem;
+  border: 1px solid #D9D9D9;
+  padding: 0;
   border-radius: 0.2rem;
+  display: block;
+  font-size: 0.875rem;
+  min-width: 2rem;
+  min-height: 32px;
+  margin: 0 0.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .ngx-pagination li a:hover, .ngx-pagination li a:focus {
   background-color: #BFDDF1;
-  color: #fff;
-  border-color: #BFDDF1;
+  color: #00335B;
+  border-color: #0079C8;
+}
+.ngx-pagination li a span {
+  font-size: 0.875rem;
 }
 .ngx-pagination li.disabled a {
   background-color: #F2F5F7;
   color: #7F99AD;
   border-color: #BFCCD6;
 }
-.ngx-pagination li.current a {
-  background-color: #0079C8;
+.ngx-pagination li.current {
+  text-decoration: none;
+  padding: 0;
+  border-radius: 0.2rem;
+  display: block;
+  font-size: 0.875rem;
+  min-width: 2rem;
+  min-height: 32px;
+  margin: 0 0.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
   color: #0079C8;
-  border-color: #0079C8;
+  border: 1px solid #0079C8;
+  font-weight: bold;
 }
 .ngx-pagination li .show-for-sr {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .ngx-pagination .small-screen {
+    display: none;
+  }
 }
 
 /*** end pagination component **/

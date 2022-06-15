@@ -452,10 +452,10 @@ a {
   text-decoration: underline;
 }
 a:hover, a:focus {
-  color: #00548C;
+  color: #0652AE;
 }
 a:visited {
-  color: #00548C;
+  color: #0652AE;
 }
 
 /** end etiquetas de enlace **/
@@ -4613,6 +4613,210 @@ blockquote {
   }
 }
 /** 
+* buttons component
+**/
+/** definicion de boton **/
+.btn,
+.bp-btn {
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0079C8;
+  border: 1px solid transparent;
+  background-color: #fff;
+}
+.btn.btn-2x,
+.bp-btn.btn-2x {
+  padding: 1rem 2.5rem;
+}
+.btn.btn-3x,
+.bp-btn.btn-3x {
+  padding: 1rem 3.7rem;
+}
+.btn.btn-4x,
+.bp-btn.btn-4x {
+  padding: 1rem 5rem;
+}
+.btn:visited,
+.bp-btn:visited {
+  color: #fff;
+}
+.btn:hover, .btn:focus, .btn.active,
+.bp-btn:hover,
+.bp-btn:focus,
+.bp-btn.active {
+  background-color: #00548C;
+  border-color: #00548C;
+  color: #fff;
+  text-decoration: none;
+}
+.btn:disabled, .btn.disabled,
+.bp-btn:disabled,
+.bp-btn.disabled {
+  background-color: #F2F5F7;
+  border-color: #BFCCD6;
+  color: #7F99AD;
+  cursor: default;
+  pointer-events: none;
+}
+
+.btn-icon,
+.bp-btn-icon {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #0079C8;
+  border: 0;
+  background-color: transparent;
+}
+.btn-icon:visited,
+.bp-btn-icon:visited {
+  color: #0079C8;
+}
+.btn-icon:hover, .btn-icon:focus, .btn-icon.active,
+.bp-btn-icon:hover,
+.bp-btn-icon:focus,
+.bp-btn-icon.active {
+  background-color: #00548C;
+  border-color: #00548C;
+  color: #fff;
+  text-decoration: none;
+}
+
+/** end definicion de boton **/
+/**
+* Variaciones - Estilos de boton 
+***/
+/**
+ * 1. btn primary
+ **/
+.btn-primary,
+.bp-btn-primary {
+  background-color: #0079C8;
+  color: #fff;
+  border: 1px solid #0079C8;
+}
+.btn-primary:visited,
+.bp-btn-primary:visited {
+  color: #fff;
+}
+
+/** end important **/
+/** end btn primary and secondary **/
+/**
+ * 2.btn outline primary and secondary
+**/
+.btn-outlined,
+.bp-btn-outlined {
+  background-color: #fff;
+  color: #0079C8;
+  border: 1px solid #0079C8;
+}
+.btn-outlined:visited,
+.bp-btn-outlined:visited {
+  color: #0079C8;
+}
+.btn-outlined:hover, .btn-outlined:focus,
+.bp-btn-outlined:hover,
+.bp-btn-outlined:focus {
+  border-color: #00548C;
+  color: #00548C;
+}
+
+/** end important **/
+/** end btn outline primary and secondary **/
+/**
+* 3. Link
+**/
+.btn-link,
+.bp-btn-link {
+  color: #0079C8;
+  text-decoration: underline;
+}
+.btn-link:visited,
+.bp-btn-link:visited {
+  color: #0079C8;
+}
+.btn-link:hover, .btn-link:focus,
+.bp-btn-link:hover,
+.bp-btn-link:focus {
+  background-color: transparent;
+  color: #00548C;
+  text-decoration: underline;
+}
+
+/** end btn link **/
+/** btn elininar **/
+.btn-danger {
+  color: #D81E05;
+}
+
+/**
+* Btn Group Icon + Text
+*/
+.btn-group-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+}
+.btn-group-icon .material-icons,
+.btn-group-icon i,
+.btn-group-icon span {
+  font-size: 1.25rem;
+}
+
+/** end Group Icon + Text **/
+/** utilities bootstrap**/
+.bp-btn-block,
+.btn-block {
+  width: 100%;
+  display: block;
+}
+
+.bp-btn-lg,
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+/** end utilities bootstrap**/
+/** 
+* end buttons component
+**/
+/** 
 * container component
 **/
 /** section **/
@@ -4998,9 +5202,9 @@ th {
           align-items: center;
 }
 .ngx-pagination li a:hover, .ngx-pagination li a:focus {
-  background-color: #BFDDF1;
-  color: #00335B;
-  border-color: #0079C8;
+  background-color: #00548C;
+  color: #fff;
+  border-color: #00548C;
 }
 .ngx-pagination li a span {
   font-size: 0.875rem;
@@ -5181,7 +5385,7 @@ th {
 }
 .wizzard-steps .step-active .step-circle {
   color: #fff;
-  background-color: #00548C;
+  background-color: #0652AE;
   border-color: #fff;
 }
 .wizzard-steps .step-active .step-circle::before {

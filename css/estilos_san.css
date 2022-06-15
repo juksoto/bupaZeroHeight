@@ -5513,6 +5513,10 @@ th {
   display: inline-block;
 }
 
+.wizard-no-label.wizard-steps .wizard-step-content .step-text {
+  display: none;
+}
+
 /** step active **/
 .step-active .wizard-line {
   background-color: #0652AE;

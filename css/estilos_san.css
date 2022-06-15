@@ -5319,6 +5319,17 @@ th {
   text-align: center;
 }
 
+.wizzard-mobile {
+  display: none;
+  text-align: center;
+  font-size: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .wizzard-mobile {
+    display: block;
+  }
+}
+
 .wizzard-steps {
   padding: 0;
   margin: 0 auto;
@@ -5327,20 +5338,9 @@ th {
   overflow-x: auto;
   font-size: 1rem;
   text-align: center;
-  /** step active **/
-  /** end step active **/
-  /** step error **/
-  /** end step error **/
-  /** step disabled **/
-  /** end step error **/
-  /** step success **/
-  /** end step success **/
-  /** step warning **/
 }
 .wizzard-steps .wizzard-step {
   margin-bottom: 1rem;
-  display: inline-block;
-  vertical-align: top;
 }
 .wizzard-steps .wizzard-step:first-child {
   margin-left: 0;
@@ -5402,7 +5402,12 @@ th {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.wizzard-steps .step-circle::before {
+
+.wizzard-horizontal .wizzard-step {
+  display: inline-block;
+  vertical-align: top;
+}
+.wizzard-horizontal .step-circle::before {
   content: "";
   display: block;
   position: absolute;
@@ -5417,119 +5422,169 @@ th {
   -moz-transform: translate(-100%, -50%);
   -ms-transform: translate(-100%, -50%);
   -o-transform: translate(-100%, -50%);
+  z-index: -1;
 }
-.wizzard-steps .step-active .step-circle {
-  color: #fff;
-  background-color: #0652AE;
-  border-color: #fff;
-}
-.wizzard-steps .step-active .step-circle::before {
-  color: #0652AE;
-  font-weight: bold;
-}
-.wizzard-steps .step-active .step-text {
-  color: #00335B;
-}
-.wizzard-steps .step-error .step-circle {
-  color: #D81E05;
-  background-color: #FCF1F0;
-  border-color: #D81E05;
-}
-.wizzard-steps .step-error .step-circle::before {
-  color: #D81E05;
-}
-.wizzard-steps .step-error .step-text {
-  color: #D81E05;
-}
-.wizzard-steps .step-disabled .step-circle {
-  color: #7F99AD;
-  background-color: #F2F5F7;
-  border-color: #BFCCD6;
-}
-.wizzard-steps .step-disabled .step-circle::before {
-  color: #7F99AD;
-}
-.wizzard-steps .step-disabled .step-text {
-  color: #7F99AD;
-}
-.wizzard-steps .step-success .step-circle {
-  color: #fff;
-  background-color: #002949;
-  border-color: #002949;
-}
-.wizzard-steps .step-success .step-circle::before {
-  color: #00335B;
-}
-.wizzard-steps .step-success .step-text {
-  color: #212121;
-}
-.wizzard-steps .step-warning .step-circle {
-  color: #635A15;
-  background-color: #FDF6DD;
-  border-color: #FFC300;
-}
-.wizzard-steps .step-warning .step-circle::before {
-  color: #635A15;
-}
-.wizzard-steps .step-warning .step-text {
-  color: #635A15;
+@media screen and (max-width: 480px) {
+  .wizzard-horizontal .wizzard-step-content {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
-  .wizzard-steps .wizzard-step-content {
+  .wizzard-horizontal .wizzard-step-content {
     width: 5rem;
     min-width: 5rem;
     max-width: 5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .wizzard-steps .wizzard-step-content {
+  .wizzard-horizontal .wizzard-step-content {
     width: 6rem;
     min-width: 6rem;
     max-width: 6rem;
   }
-  .wizzard-steps .step-circle::before {
+  .wizzard-horizontal .step-circle::before {
     width: 4.75rem;
   }
 }
 @media screen and (max-width: 992px) {
-  .wizzard-steps .wizzard-step-content {
+  .wizzard-horizontal .wizzard-step-content {
     width: 6rem;
     min-width: 6rem;
     max-width: 6rem;
   }
-  .wizzard-steps .step-circle::before {
+  .wizzard-horizontal .step-circle::before {
     width: 4.75rem;
   }
 }
 @media (min-width: 992px) and (max-width: 1024px) {
-  .wizzard-steps .wizzard-step-content {
+  .wizzard-horizontal .wizzard-step-content {
     width: 8rem;
     min-width: 8rem;
     max-width: 8rem;
   }
-  .wizzard-steps .step-circle::before {
+  .wizzard-horizontal .step-circle::before {
     width: 6.75rem;
   }
 }
 @media (min-width: 1024px) and (max-width: 1299px) {
-  .wizzard-steps .wizzard-step-content {
+  .wizzard-horizontal .wizzard-step-content {
     width: 10rem;
     min-width: 10rem;
     max-width: 10rem;
   }
-  .wizzard-steps .step-circle::before {
+  .wizzard-horizontal .step-circle::before {
     width: 8.75rem;
   }
 }
-@media screen and (min-width: 1400px) {
-  .wizzard-steps .wizzard-step-content {
+@media screen and (min-width: 1200px) {
+  .wizzard-horizontal .wizzard-step-content {
     width: 12rem;
     min-width: 12rem;
     max-width: 12rem;
   }
-  .wizzard-steps .step-circle::before {
+  .wizzard-horizontal .step-circle::before {
     width: 10.75rem;
   }
+}
+
+.wizzard-vertical {
+  display: inline-block;
+}
+.wizzard-vertical .wizzard-step {
+  display: block;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.wizzard-vertical .wizzard-step-content {
+  padding: 0;
+  border-top: 0.5rem solid white;
+}
+.wizzard-vertical .step-circle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0.5rem;
+  width: 2px;
+  transform: translate(-50%, -100%);
+  height: 100%;
+  color: #D9D9D9;
+  background-color: currentColor;
+  -webkit-transform: translate(-50%, -100%);
+  -moz-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  -o-transform: translate(-50%, -100%);
+  z-index: -1;
+}
+
+/** step active **/
+.step-active .step-circle {
+  color: #fff;
+  background-color: #0652AE;
+  border-color: #fff;
+}
+.step-active .step-circle::before {
+  color: #0652AE;
+  font-weight: bold;
+}
+.step-active .step-text {
+  color: #00335B;
+}
+
+/** end step active **/
+/** step error **/
+.step-error .step-circle {
+  color: #D81E05;
+  background-color: #FCF1F0;
+  border-color: #D81E05;
+}
+.step-error .step-circle::before {
+  color: #D81E05;
+}
+.step-error .step-text {
+  color: #D81E05;
+}
+
+/** end step error **/
+/** step disabled **/
+.step-disabled .step-circle {
+  color: #7F99AD;
+  background-color: #F2F5F7;
+  border-color: #BFCCD6;
+}
+.step-disabled .step-circle::before {
+  color: #7F99AD;
+}
+.step-disabled .step-text {
+  color: #7F99AD;
+}
+
+/** end step error **/
+/** step success **/
+.step-success .step-circle {
+  color: #fff;
+  background-color: #002949;
+  border-color: #002949;
+}
+.step-success .step-circle::before {
+  color: #00335B;
+}
+.step-success .step-text {
+  color: #212121;
+}
+
+/** end step success **/
+/** step warning **/
+.step-warning .step-circle {
+  color: #635A15;
+  background-color: #FDF6DD;
+  border-color: #FFC300;
+}
+.step-warning .step-circle::before {
+  color: #635A15;
+}
+.step-warning .step-text {
+  color: #635A15;
 }
 
 /** end step warning **/

@@ -5314,23 +5314,23 @@ th {
 }
 
 /*** end pagination component **/
-/*** wizzard  ***/
-.wizzard-container {
+/*** wizard  ***/
+.wizard-container {
   text-align: center;
 }
 
-.wizzard-mobile {
+.wizard-mobile {
   display: none;
   text-align: center;
   font-size: 1rem;
 }
 @media screen and (max-width: 480px) {
-  .wizzard-mobile {
+  .wizard-mobile {
     display: block;
   }
 }
 
-.wizzard-steps {
+.wizard-steps {
   padding: 0;
   margin: 0 auto;
   list-style: none;
@@ -5339,22 +5339,22 @@ th {
   font-size: 1rem;
   text-align: center;
 }
-.wizzard-steps .wizzard-step {
+.wizard-steps .wizard-step {
   margin-bottom: 1rem;
 }
-.wizzard-steps .wizzard-step:first-child {
+.wizard-steps .wizard-step:first-child {
   margin-left: 0;
 }
-.wizzard-steps .wizzard-step:last-child {
+.wizard-steps .wizard-step:last-child {
   margin-right: auto;
 }
-.wizzard-steps .wizzard-step:first-of-type .step-circle::before {
+.wizard-steps .wizard-step:first-of-type .step-circle::before {
   display: none;
 }
-.wizzard-steps .wizzard-step:last-of-type .step-content {
+.wizard-steps .wizard-step:last-of-type .step-content {
   padding-right: 0;
 }
-.wizzard-steps .wizzard-step-content {
+.wizard-steps .wizard-step-content {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   display: -webkit-box;
@@ -5374,13 +5374,13 @@ th {
   min-width: 10rem;
   max-width: 10rem;
 }
-.wizzard-steps .wizzard-step-content .step-text {
+.wizard-steps .wizard-step-content .step-text {
   color: #212121;
   /*word-break: break-all;*/
   margin-top: 0.625rem;
   font-size: 0.85rem;
 }
-.wizzard-steps .step-circle {
+.wizard-steps .step-circle {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5403,11 +5403,14 @@ th {
   -o-border-radius: 50%;
 }
 
-.wizzard-horizontal .wizzard-step {
+.wizard-horizontal .wizard-step {
   display: inline-block;
   vertical-align: top;
 }
-.wizzard-horizontal .step-circle::before {
+.wizard-horizontal .wizard-step .wizard-line {
+  display: none;
+}
+.wizard-horizontal .step-circle::before {
   content: "";
   display: block;
   position: absolute;
@@ -5425,81 +5428,81 @@ th {
   z-index: -1;
 }
 @media screen and (max-width: 480px) {
-  .wizzard-horizontal .wizzard-step-content {
+  .wizard-horizontal .wizard-step-content {
     display: none;
   }
 }
 @media screen and (max-width: 768px) {
-  .wizzard-horizontal .wizzard-step-content {
+  .wizard-horizontal .wizard-step-content {
     width: 5rem;
     min-width: 5rem;
     max-width: 5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .wizzard-horizontal .wizzard-step-content {
+  .wizard-horizontal .wizard-step-content {
     width: 6rem;
     min-width: 6rem;
     max-width: 6rem;
   }
-  .wizzard-horizontal .step-circle::before {
+  .wizard-horizontal .step-circle::before {
     width: 4.75rem;
   }
 }
 @media screen and (max-width: 992px) {
-  .wizzard-horizontal .wizzard-step-content {
+  .wizard-horizontal .wizard-step-content {
     width: 6rem;
     min-width: 6rem;
     max-width: 6rem;
   }
-  .wizzard-horizontal .step-circle::before {
+  .wizard-horizontal .step-circle::before {
     width: 4.75rem;
   }
 }
 @media (min-width: 992px) and (max-width: 1024px) {
-  .wizzard-horizontal .wizzard-step-content {
+  .wizard-horizontal .wizard-step-content {
     width: 8rem;
     min-width: 8rem;
     max-width: 8rem;
   }
-  .wizzard-horizontal .step-circle::before {
+  .wizard-horizontal .step-circle::before {
     width: 6.75rem;
   }
 }
 @media (min-width: 1024px) and (max-width: 1299px) {
-  .wizzard-horizontal .wizzard-step-content {
+  .wizard-horizontal .wizard-step-content {
     width: 10rem;
     min-width: 10rem;
     max-width: 10rem;
   }
-  .wizzard-horizontal .step-circle::before {
+  .wizard-horizontal .step-circle::before {
     width: 8.75rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .wizzard-horizontal .wizzard-step-content {
+  .wizard-horizontal .wizard-step-content {
     width: 12rem;
     min-width: 12rem;
     max-width: 12rem;
   }
-  .wizzard-horizontal .step-circle::before {
+  .wizard-horizontal .step-circle::before {
     width: 10.75rem;
   }
 }
 
-.wizzard-vertical {
+.wizard-vertical {
   display: inline-block;
 }
-.wizzard-vertical .wizzard-step {
+.wizard-vertical .wizard-step {
   display: block;
   position: relative;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
-.wizzard-vertical .wizzard-step-content {
+.wizard-vertical .wizard-step-content {
   padding: 0;
-  border-top: 0.5rem solid white;
+  border-top: 1rem solid white;
 }
-.wizzard-vertical .step-circle::before {
+.wizard-vertical .step-circle::before {
   content: "";
   display: block;
   position: absolute;
@@ -5588,7 +5591,7 @@ th {
 }
 
 /** end step warning **/
-/*** end wizzard  ***/
+/*** end wizard  ***/
 /***
 ** Sistema de diseño de Sanitas
 ****/

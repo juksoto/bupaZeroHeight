@@ -4656,12 +4656,13 @@ blockquote {
   border-color: #00548C;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 .btn:disabled, .btn.disabled,
 .bp-btn:disabled,
 .bp-btn.disabled {
-  background-color: #F2F5F7;
-  border-color: #BFCCD6;
+  background-color: transparent;
+  border-color: transparent;
   color: #7F99AD;
   cursor: default;
   pointer-events: none;
@@ -4670,11 +4671,11 @@ blockquote {
 .btn-icon,
 .bp-btn-icon {
   padding: 1rem;
-  border-radius: 0.25rem;
-  -webkit-border-radius: 0.25rem;
-  -moz-border-radius: 0.25rem;
-  -ms-border-radius: 0.25rem;
-  -o-border-radius: 0.25rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
   text-align: center;
   width: 3rem;
   height: 3rem;
@@ -4706,6 +4707,15 @@ blockquote {
   color: #fff;
   text-decoration: none;
 }
+.btn-icon:disabled, .btn-icon.disabled,
+.bp-btn-icon:disabled,
+.bp-btn-icon.disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #7F99AD;
+  cursor: default;
+  pointer-events: none;
+}
 
 /** end definicion de boton **/
 /**
@@ -4723,6 +4733,13 @@ blockquote {
 .btn-primary:visited,
 .bp-btn-primary:visited {
   color: #fff;
+}
+.btn-primary:disabled, .btn-primary.disabled,
+.bp-btn-primary:disabled,
+.bp-btn-primary.disabled {
+  background-color: #F2F5F7;
+  border-color: #BFCCD6;
+  color: #7F99AD;
 }
 
 /** end important **/
@@ -4743,8 +4760,16 @@ blockquote {
 .btn-outlined:hover, .btn-outlined:focus,
 .bp-btn-outlined:hover,
 .bp-btn-outlined:focus {
+  background-color: #fff;
   border-color: #00548C;
   color: #00548C;
+}
+.btn-outlined:disabled, .btn-outlined.disabled,
+.bp-btn-outlined:disabled,
+.bp-btn-outlined.disabled {
+  background-color: #fff;
+  border-color: #BFCCD6;
+  color: #7F99AD;
 }
 
 /** end important **/
@@ -4767,6 +4792,14 @@ blockquote {
   background-color: transparent;
   color: #00548C;
   text-decoration: underline;
+  border-color: transparent;
+}
+.btn-link:disabled, .btn-link.disabled,
+.bp-btn-link:disabled,
+.bp-btn-link.disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #7F99AD;
 }
 
 /** end btn link **/
